@@ -1,0 +1,256 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#port{
+    font-family: 'nunito';
+    color: #8D39EC;
+    font-size: 60px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color: #101010;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.cards{
+    display: flex;
+    margin-bottom: 200px;
+    margin-left: 10vh; 
+}
+.card:hover{
+transform: scale3d(1.1,1.1,1.1);
+
+}
+#eu{
+    margin-top: 200px;
+    max-width: 100px;
+
+}
+
+@font-face {
+    font-family: 'lombok';
+    src: url('fontes/Lombok\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'nunito';
+    src: url('fontes/Nunito-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes bounce {
+    0%,20%,60%,100% {
+        -webkit-tranform:translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-tranform:translateY(-8px);
+        transform: translateY(-8px);
+    }
+    80%{
+        -webkit-tranform:translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+.card{
+   background-color: black;
+   width: 300px; 
+   height: 500px;
+   border-radius: 10px;
+   margin-top: 250px; 
+   border:5px inset #8D39EC;
+   margin-left: 10vw;
+   transition: 0.4s;
+
+}
+div.cards section.card:first-child{
+    margin-left:0;
+}
+.hh1{
+    font-size: 200%;
+    color: #8D39EC;
+    font-family: 'nunito';
+    cursor: pointer;
+    text-align: center;
+}
+h1:hover{
+    animation: bounce 1s;
+}
+
+/* Partes alem do início*/
+
+.taxa{
+    background-color: black;
+    margin-top: 500px;
+    height: 500px;
+    width: 80vw;
+    border-radius: 10px;
+    border:5px inset #8D39EC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@keyframes slide{
+   0%{
+    transform: translateX(0px);
+   }
+   100%{
+    transform: translateX(200px);
+    background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
+   }
+}
+
+@keyframes shine{
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: rgba(29, 28, 28, 0.849);
+    }
+    40%{
+        background-color: black;
+    }
+    60%{
+        background-color: rgba(29, 28, 28, 0.849);
+    }
+    80%{
+        background-color: black;
+    }
+    100%{
+        background-color: rgba(29, 28, 28, 0.849);
+    }
+}
+.titulo{
+    color: #8D39EC;
+    padding-top: 4px;
+    padding-left: 15px;
+    cursor: pointer;
+    font-family: 'nunito', Courier, monospace;
+}
+
+.paragrafo{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: "Verdana";
+}
+
+#last{
+    margin-bottom: 100px;
+}
+
+.projects{
+    border-radius: 6px;
+    margin: 0 auto;
+    cursor:pointer;
+    color: white;
+    text-align: center;
+}
+
+img{
+    max-width: 300px;
+    background-position: left;
+}
+#imglinkedin{
+max-width: 20px;
+}
+
+.linha{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    animation: none;
+}
+
+button{
+    margin-left: 40vh;
+    color: white;
+    width: 100px;
+    height: 60px;
+    background-color: black;
+    border:5px inset #8D39EC;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+button:hover{
+    transition: all 2s ease;
+    background-color: rgb(66, 65, 65);
+    color: black;
+}
+
+#logo{
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+#certificado{
+    margin-top: 90px;
+    text-align: center;
+    border: none;
+}
+#linkedin{
+    border: none;
+}
+#github{
+    border: none;
+}
+#linkedinimg{
+    max-width: 45px;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-left: 60%;
+}
+
+#githubimg{
+    max-width: 45px;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-left: 60%;
+}
+
+#certificadoimg{
+    max-width: 50px;
+    margin: 0 auto;
+    margin-top: 2px;
+    margin-left: 60%;
+}
+
+#certificado{
+    width: 120px;
+    height: 70px;
+}
+#gatinho{
+    background-size: contain;
+    background-image: url(imgs/Ilustração-Sem-Título-removebg-preview.png);
+    width: 300px;
+    height: 300px;
+}
+#gatinho:hover{
+    animation: slide 1s;
+}
+#last{
+    animation: shine 3s infinite ease-in-out;
+}
+footer{
+    color: white;
+}
