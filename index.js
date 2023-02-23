@@ -1,23 +1,17 @@
 function descer1 (){
     element = document.getElementById("taxa1");
-    element.scrollIntoView();
+    element.scrollIntoView({block: "center", inline: "center"});
 }
 
 function descer2 (){
     element = document.getElementById("taxa2");
-    element.scrollIntoView();
+    element.scrollIntoView({block: "center", inline: "center"});
 }
 
 function descer3 (){
     element = document.getElementById("last");
-    element.scrollIntoView();
+    element.scrollIntoView({block: "center", inline: "center"});
 }
-
-function voltar(){
-    element = document.getElementById("card1");
-    element.scrollIntoView();
-}
-
 
 let a = document.getElementById('card1')
 let b = document.getElementById('card2')
