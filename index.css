@@ -36,7 +36,7 @@ div.cards{
     }
     .cards{
         flex-direction: column;
-        margin:0;
+        margin-left: 0;
     }
     .taxa{
         flex-direction: column;
