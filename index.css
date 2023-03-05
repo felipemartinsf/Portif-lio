@@ -26,15 +26,15 @@ body{
 div.cards{
     display: flex;
     margin-bottom: 200px;
-    margin-left: 10vh; 
+    margin-left: 0; 
 }
 @media screen and (max-width:768px){
     #port{
         margin:0;
     }
-    .cards{
+    div.cards{
         flex-direction: column;
-
+        margin-left: 5vh;
     }
     .taxa{
         flex-direction: column;
@@ -59,13 +59,13 @@ div.cards{
         font-size: 50px;
     }
     #card1{
-       margin-left:0;
+        margin-left: 0;
     }
     #card2{
-        margin-left:0;
+        margin-left: 0;
     }
     #card3{
-        margin-left:0;
+        margin-left: 0;
     }
    #linkedin{
     margin:0;
@@ -79,8 +79,8 @@ div.cards{
 }
 .card:hover{
 transform: scale3d(1.1,1.1,1.1);
-
 }
+
 #eu{
     margin-top: 200px;
     max-width: 100px;
