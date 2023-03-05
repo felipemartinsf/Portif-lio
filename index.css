@@ -3,7 +3,6 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-
 }
 #port{
     font-family: 'nunito';
@@ -29,14 +28,13 @@ div.cards{
     margin-bottom: 200px;
     margin-left: 10vh; 
 }
-
 @media screen and (max-width:768px){
     #port{
         margin:0;
     }
     .cards{
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 5vh;
     }
     .taxa{
         flex-direction: column;
@@ -61,13 +59,13 @@ div.cards{
         font-size: 50px;
     }
     #card1{
-       margin:0;
+        margin-left: 0;
     }
     #card2{
-        margin:0;
+        margin-left: 0;
     }
     #card3{
-       margin:0;
+        margin-left: 0;
     }
    #linkedin{
     margin:0;
@@ -304,3 +302,4 @@ button:hover{
 footer{
     color: white;
 }
+
