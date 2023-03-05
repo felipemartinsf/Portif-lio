@@ -29,6 +29,56 @@ div.cards{
     margin-bottom: 200px;
     margin-left: 10vh; 
 }
+
+@media(max-width:700px){
+    #port{
+        margin:0;
+    }
+    .cards{
+        flex-direction: column;
+        margin-left: 5vh;
+    }
+    .taxa{
+        flex-direction: column;
+    }
+    #taxa1{
+        max-height: 1500px;
+        height: 80%;
+        margin-left: 5vh;
+    }
+    #taxa2{
+        max-height: 1500px;
+        height: 80%;
+        margin-left: 5vh;
+    }
+    #last{
+        margin-left: 5vh;
+    }
+    .linha{
+        flex-direction: column;
+    }
+    #titulo{
+        font-size: 50px;
+    }
+    #card1{
+        margin-left: none;
+    }
+    #card2{
+        margin-left: 0;
+    }
+    #card3{
+        margin-left: 0;
+    }
+   #linkedin{
+    margin:0;
+   }
+   #github{
+    margin:0;
+   }
+   #certificado{
+    margin:0;
+   }
+}
 .card:hover{
 transform: scale3d(1.1,1.1,1.1);
 
