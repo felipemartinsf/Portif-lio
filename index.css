@@ -61,13 +61,13 @@ div.cards{
         font-size: 50px;
     }
     #card1{
-        margin-left: none;
+       margin-left: 5vh;
     }
     #card2{
-        margin-left: 0;
+        margin-left: 5vh;
     }
     #card3{
-        margin-left: 0;
+        margin-left: 5vh;
     }
    #linkedin{
     margin:0;
