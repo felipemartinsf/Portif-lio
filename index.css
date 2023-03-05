@@ -34,7 +34,7 @@ div.cards{
     }
     .cards{
         flex-direction: column;
-        margin-left: 5vh;
+
     }
     .taxa{
         flex-direction: column;
@@ -59,13 +59,13 @@ div.cards{
         font-size: 50px;
     }
     #card1{
-       margin-right: 5vh;
+       margin-left:0;
     }
     #card2{
-        margin-right: 5vh;
+        margin-left:0;
     }
     #card3{
-        margin-right: 5vh;
+        margin-left:0;
     }
    #linkedin{
     margin:0;
