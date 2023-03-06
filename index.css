@@ -28,6 +28,11 @@ div.cards{
     margin-bottom: 200px;
     margin-left: 0; 
 }
+@media screen and (min-width:1024px){
+    div.cards{
+        margin-left: 10vh;
+    }
+}
 @media screen and (max-width:768px){
     #port{
         margin:0;
