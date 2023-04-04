@@ -34,6 +34,10 @@ div.cards{
     }
 }
 @media screen and (max-width:768px){
+    .row{
+           display: flex;
+    flex-direction: column;
+    }
     #port{
         margin:0;
     }
@@ -198,80 +202,97 @@ h1:hover{
 }
 
 .paragrafo{
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: "Verdana";
+font-size: 20px;
+color: rgb(255, 255, 255);
+padding-top: 15px;
+padding-left: 15px;
+padding-right: 15px;
+font-family: "Verdana";
 }
 
 #last{
-    margin-bottom: 100px;
+margin-bottom: 100px;
+}
+
+.row{
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 20vh;
 }
 
 .projects{
-    border-radius: 6px;
-    margin: 0 auto;
-    cursor:pointer;
-    color: white;
-    text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 6px;
+border: 1px solid #8D39EC;
+cursor:pointer;
+background-color:rgba(29, 28, 28, 0.849);
+color: white;
+flex-direction: row;
+width: 100px;
+height: 100px;
+text-decoration: none;
 }
 
+#last:not(.projects) {
+animation: shine 10s infinite ease-in-out;
+  }
 img{
-    max-width: 300px;
-    background-position: left;
+max-width: 300px;
+background-position: left;
 }
 #imglinkedin{
 max-width: 20px;
 }
 
 .linha{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    animation: none;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+animation: none;
 }
 
 button{
-    margin-left: 40vh;
-    color: white;
-    width: 100px;
-    height: 60px;
-    background-color: black;
-    border:5px inset #8D39EC;
-    border-radius: 7px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
+margin-left: 40vh;
+color: white;
+width: 100px;
+height: 60px;
+background-color: black;
+border:5px inset #8D39EC;
+border-radius: 7px;
+cursor: pointer;
+display: flex;
+flex-direction: column;
 }
 button:hover{
-    transition: all 2s ease;
-    background-color: rgb(66, 65, 65);
-    color: black;
+transition: all 2s ease;
+background-color: rgb(66, 65, 65);
+color: black;
 }
 
 #logo{
-    margin: 0 auto;
-    margin-top: 90px;
+margin: 0 auto;
+margin-top: 90px;
 }
 
 #certificado{
-    margin-top: 90px;
-    text-align: center;
-    border: none;
+margin-top: 90px;
+text-align: center;
+border: none;
 }
 #linkedin{
-    border: none;
+border: none;
 }
 #github{
-    border: none;
+border: none;
 }
 #linkedinimg{
-    max-width: 45px;
-    margin: 0 auto;
-    margin-top: 2px;
-    margin-left: 60%;
+max-width: 45px;
+margin: 0 auto;
+margin-top: 2px;
+margin-left: 60%;
 }
 
 #githubimg{
@@ -302,7 +323,7 @@ button:hover{
     animation: slide 1s;
 }
 #last{
-    animation: shine 3s infinite ease-in-out;
+    animation: shine 2s infinite ease-in-out;
 }
 footer{
     color: white;
