@@ -172,31 +172,31 @@ h1:hover{
     background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
    }
 }
-
+/*
 @keyframes shine{
     0%{
         background-color: black;
     }
     20%{
-        background-color: rgba(29, 28, 28, 0.849);
+        background-color: rgba(13, 12, 12, 0.849);
     }
     40%{
         background-color: black;
     }
     60%{
-        background-color: rgba(29, 28, 28, 0.849);
+        background-color: rgba(13, 12, 12, 0.849);
     }
     80%{
         background-color: black;
     }
     100%{
-        background-color: rgba(29, 28, 28, 0.849);
+        background-color: rgba(13, 12, 12, 0.849);
     }
 }
+*/
 .titulo{
     color: #8D39EC;
     padding-top: 4px;
-    padding-left: 15px;
     cursor: pointer;
     font-family: 'nunito', Courier, monospace;
 }
@@ -214,31 +214,38 @@ font-family: "Verdana";
 margin-bottom: 100px;
 }
 
-.row{
-display: flex;
-align-items: center;
-justify-content: center;
-margin-top: 20vh;
+.last-title {
+    width: 100%;
+}
+
+.last-content {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .projects{
+text-decoration: none;
 display: flex;
 align-items: center;
 justify-content: center;
-border-radius: 6px;
-border: 1px solid #8D39EC;
+border-radius: 0.2rem;
+border: 0.1rem solid #8D39EC;
 cursor:pointer;
-background-color:rgba(29, 28, 28, 0.849);
+background-color: black;
 color: white;
 flex-direction: row;
-width: 100px;
-height: 100px;
-text-decoration: none;
+width: 15rem;
+height: 3rem;
+font-family: 'nunito';
+text-decoration: none;;
 }
 
-#last:not(.projects) {
+/*#last:not(.projects) {
 animation: shine 10s infinite ease-in-out;
   }
+  */
 img{
 max-width: 300px;
 background-position: left;
