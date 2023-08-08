@@ -11,6 +11,11 @@
     margin-top: 30px;
     cursor: pointer;
 }
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 main{
     text-align: center;
     display: flex;
@@ -23,27 +28,28 @@ body{
     justify-content: center;
     align-items: center;
 }
-div.cards{
+.cards{
     display: flex;
     margin-bottom: 200px;
-    margin-left: 0; 
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: space-between;
 }
-@media screen and (min-width:1024px){
-    div.cards{
-        margin-left: 10vh;
-    }
-}
+
 @media screen and (max-width:768px){
     .row{
-           display: flex;
+    display: flex;
     flex-direction: column;
     }
     #port{
         margin:0;
     }
-    div.cards{
+    .cards{
         flex-direction: column;
-        margin-left: 5vh;
+        margin: 0 ;
+    }
+    .card{
+        margin:0 auto;
     }
     .taxa{
         flex-direction: column;
@@ -67,15 +73,7 @@ div.cards{
     #titulo{
         font-size: 50px;
     }
-    #card1{
-        margin-left: 0;
-    }
-    #card2{
-        margin-left: 0;
-    }
-    #card3{
-        margin-left: 0;
-    }
+
    #linkedin{
     margin:0;
    }
@@ -131,13 +129,10 @@ transform: scale3d(1.1,1.1,1.1);
    border-radius: 10px;
    margin-top: 250px; 
    border:5px inset #8D39EC;
-   margin-left: 10vw;
    transition: 0.4s;
 
 }
-div.cards section.card:first-child{
-    margin-left:0;
-}
+
 .hh1{
     font-size: 200%;
     color: #8D39EC;
@@ -235,17 +230,13 @@ border: 0.1rem solid #8D39EC;
 cursor:pointer;
 background-color: black;
 color: white;
-flex-direction: row;
 width: 15rem;
 height: 3rem;
 font-family: 'nunito';
 text-decoration: none;;
 }
 
-/*#last:not(.projects) {
-animation: shine 10s infinite ease-in-out;
-  }
-  */
+
 img{
 max-width: 300px;
 background-position: left;
@@ -330,7 +321,7 @@ margin-left: 60%;
     animation: slide 1s;
 }
 #last{
-    animation: shine 2s infinite ease-in-out;
+    flex-direction: row;
 }
 footer{
     color: white;
