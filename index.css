@@ -361,7 +361,7 @@ margin: 0 auto;
     margin-right: 10rem;
 }
 #gatinho:hover{
-    animation: troca 0.5s;
+    animation: troca 1s;
 }
 #last{
     flex-direction: row;
