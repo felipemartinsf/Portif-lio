@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
+<head> <!---->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,55 +12,49 @@
 
 <body>
     <main>
-        <div class="container">
+ 
         <h1 id='port'>Portifólio</h1>
  
-    <div class="cards">
-        <section id='card1' class="card">
-            <h1 class="hh1">SOBRE MIM</h1>
-            <img id ='eu' src="imgs/download__1_-removebg-preview.png" >
-        </section>
-        <section id='card2'class="card">
-            <h1 class="hh1">ESTUDOS<h1>
-            <img id ='eu' src="imgs/177261-removebg-preview.png" >   
-            </section>
-        <section id='card3'class="card">
-            <h1 class="hh1">PROJETOS</h1>
-            <img id ='eu' src="imgs/107788-removebg-preview.png" >   
-        </section>
-        </div>
-    </div>
+ 
     <div id='taxa1'class="taxa">
         <h1 class="titulo"> Meu nome é Felipe Martins Francisco</h1>
-        <p class="paragrafo">Olá, nasci em Araraquara-São Paulo e estou procurando experiências na área de tecnologia para me desenvolver como programador. Nesse momento, estou morando em São José dos Campos devido a <font color="green">UNIFESP</font>, mas aceito estágios remotos. Gosto dessa área porque possuo facilidade em aprender e isso me ajuda a entender novas áreas da programação. Espero em breve me tornar um programador fullstack, pois possuo capacidade e ambição de alcançar esse sonho.</p>
-       <div class="linha">
+        <p class="paragrafo">Olá, sou um desenvolvedor ainda em formação, amo muito a área de tecnologia e sempre estou procurando aprender algo novo.</p>
+       <span class="linha">
         <div id="gatinho"></div>
-        <button id="linkedin"><a href="https://www.linkedin.com/in/felipe-martins-ba5629243/" target="_blank"><img id="linkedinimg" src="imgs/linkedin.png"></a></button>
-        <button id="github"><a href="https://github.com/felipemartinsf" target="_blank"><img id="githubimg" src="imgs/github.png"></a></button>
+       <nav id="first-nav"> <a class="navegacao" id="card1">Sobre mim</a> <a class="navegacao" id="card2">Faculdade</a> <a  class="navegacao" id="card3">Projetos</a></nav>
+       </span>
     </div>
+
+    <div id='first' class="taxa" >
+        <h1 class="titulo"> Sobre mim</h1>
+        <p class="paragrafo">Nasci em Araraquara-SP, me mudei para São José dos Campos em 2022. Sou paciente e com ótima comunicação, conseguindo me adaptar a qualquer ambiente de trabalho.</p>
+        <span class="linha">
+            <nav id="exp"><h1 class="sub">Experiências prévias</h1><a id="h2" href="https://br.linkedin.com/company/ti-automotive" target="_blank">-TI Automotive Brasil<footer>Estágiario em  TI</footer></a></nav>
+            <nav> <button id="linkedin" class="info"><a href="https://www.linkedin.com/in/felipe-martins-ba5629243/" target="_blank"><img id="linkedinimg" src="imgs/linkedin.png"></a></button>
+                <button id="github" class="info"><a href="https://github.com/felipemartinsf" target="_blank"><img id="githubimg" src="imgs/github.png"></a></button></nav> 
+        </span>
     </div>
+
 
     <div id='taxa2' class="taxa" >
         <h1 class="titulo"> Universidade Federal de São Paulo</h1>
-        <p class="paragrafo">Estou no meu segundo ano de faculdade, cursando Ciência da Computação na UNIFESP. Possuo conhecimento nas linguagens C, JavaScript, CSS e HTML. Possuo inglês proficiente segundo certificado: EF SET CERTIFICATE.</p>
-        <div class="linha">
-        <img id='logo' src="imgs/LOGO_PRETO_E_VERDE_1.png">
+        <p class="paragrafo">Estou no meu quarto período de oito, cursando Ciência da Computação na UNIFESP. Possuo conhecimento nas linguagens C, JavaScript, CSS e HTML. Possuo inglês proficiente segundo certificado: EF SET CERTIFICATE.</p>
+        <span class="linha" id="last-linha">
+        <img id='logo' src="imgs/LOGO_PRETO_E_VERDE_1.png" href="">
         <button id='certificado'><a href="dowload/EF SET Certificate.pdf"><img id="certificadoimg" src="imgs/en.png"></a></button>
-    </div>
+        </span>
     </div>
 
     <div class="taxa" id="last">
-        <div class="last-title">
             <h1 class="titulo" id="lastt"> Conhecimentos</h1>
-        </div>
-        <div class="last-content">
+        <span class="last-content">
             <a href="https://github.com/felipemartinsf/AED2" target="_blank">
                 <div class="projects">Algoritmos em C</div>
             </a>
             <a href="https://github.com/felipemartinsf/Galeria" target="_blank">
                 <div class="projects">Galeria</div>
             </a>
-        </div>
+        </span>
         
     </div>
 

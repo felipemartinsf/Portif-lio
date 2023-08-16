@@ -3,13 +3,59 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    behavior: 'smooth';
 }
 #port{
     font-family: 'nunito';
-    color: #8D39EC;
+    color: #8748ce;
     font-size: 60px;
     margin-top: 30px;
+    margin-bottom: 1rem;
     cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    text-decoration:none;
+    justify-content: center;
+}
+a{
+    text-decoration:none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 1.2rem;
+}
+#card3{
+    margin-bottom: 0 !important;
+}
+.navegacao{
+    margin-bottom: 2rem;
+    font-family: 'nunito';
+}
+#h2{
+    color: white;
+    font-family: 'nunito';
+    font-size: 1rem;
+   text-align: left;
+   margin-top: 0.2rem;
+   cursor: pointer;
+}
+#h2:hover{
+
+        animation: slide 2s ease-in-out;
+    
+}
+
+.navegacao:hover{
+    animation: shine 2s;
+}
+
+.info{
+    margin-top: 4rem;
+}
+a:hover{
+    transform: scale3d(1.2,1.2,1.2);
 }
 .container {
     display: flex;
@@ -23,18 +69,11 @@ main{
 }
 body{
     background-color: #101010;
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.cards{
-    display: flex;
-    margin-bottom: 200px;
-    width: 80vw;
-    margin: 0 auto;
-    justify-content: space-between;
-}
+
 
 @media screen and (max-width:768px){
     .row{
@@ -44,28 +83,16 @@ body{
     #port{
         margin:0;
     }
-    .cards{
-        flex-direction: column;
-        margin: 0 ;
+    #gatinho{
+        margin-right: 0 !important;
     }
-    .card{
-        margin:0 auto;
+    #first-nav{
+        display: none;
     }
     .taxa{
         flex-direction: column;
-    }
-    #taxa1{
-        max-height: 1500px;
-        height: 80%;
         margin-left: 5vh;
-    }
-    #taxa2{
-        max-height: 1500px;
-        height: 80%;
-        margin-left: 5vh;
-    }
-    #last{
-        margin-left: 5vh;
+        height: 120vh  !important;
     }
     .linha{
         flex-direction: column;
@@ -73,20 +100,23 @@ body{
     #titulo{
         font-size: 50px;
     }
+    #linkedin{
+        margin-top: 1.5rem !important;
+    }
+    #logo{
+        max-width: 15rem;
+        margin-bottom: 1rem;
+    }
+    #h2{
+        text-align: center;
+    }
+    .paragrafo{
+        font-size: 0.5rem;
+    }
 
-   #linkedin{
-    margin:0;
-   }
-   #github{
-    margin:0;
-   }
-   #certificado{
-    margin:0;
-   }
+ 
 }
-.card:hover{
-transform: scale3d(1.1,1.1,1.1);
-}
+
 
 #eu{
     margin-top: 200px;
@@ -122,24 +152,33 @@ transform: scale3d(1.1,1.1,1.1);
         transform: translateY(-4px);
     }
 }
-.card{
-   background-color: black;
-   width: 300px; 
-   height: 500px;
-   border-radius: 10px;
-   margin-top: 250px; 
-   border:5px inset #8D39EC;
-   transition: 0.4s;
 
+@keyframes slide {
+    to{
+        transform: translateX(50px);
+    }
+}
+@keyframes borda {
+    0%{
+        border:1px inset #8D39EC;
+    }
+    20%{
+        border:2px inset #8d39ece5;
+    }
+    40%{
+        border:3px inset #7a22dfe5;
+    }
+    60%{
+        border:4px inset #8d39ece5;
+    }
+    80%{
+        border:3px inset #8d39ece5;
+    }
+    100%{
+        border:1px inset #8D39EC;
+    }
 }
 
-.hh1{
-    font-size: 200%;
-    color: #8D39EC;
-    font-family: 'nunito';
-    cursor: pointer;
-    text-align: center;
-}
 h1:hover{
     animation: bounce 1s;
 }
@@ -148,67 +187,82 @@ h1:hover{
 
 .taxa{
     background-color: black;
-    margin-top: 500px;
     height: 500px;
     width: 80vw;
     border-radius: 10px;
-    border:5px inset #8D39EC;
+    margin-bottom: 30rem;
+    border:1px inset #8D39EC;
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow:hidden;
+    transition: 0.4s;
 }
-
-@keyframes slide{
+/*
+.taxa:hover{
+    animation: borda 2s ease-in-out infinite;
+}
+*/
+@keyframes troca{
    0%{
     transform: translateX(0px);
    }
    100%{
-    transform: translateX(200px);
+    
     background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
    }
 }
-/*
+
 @keyframes shine{
     0%{
-        background-color: black;
+        color: white;
     }
     20%{
-        background-color: rgba(13, 12, 12, 0.849);
+        color: #8748ce;
     }
     40%{
-        background-color: black;
+        color: white;
     }
     60%{
-        background-color: rgba(13, 12, 12, 0.849);
+        color: #8748ce;
     }
     80%{
-        background-color: black;
+        color: white;
     }
     100%{
-        background-color: rgba(13, 12, 12, 0.849);
+        color: #8748ce;
     }
 }
-*/
+
 .titulo{
-    color: #8D39EC;
+    color: #7427cc;
     padding-top: 4px;
     cursor: pointer;
     font-family: 'nunito', Courier, monospace;
 }
-
+.sub{
+    color: white;
+    font-family: 'nunito';
+    font-size: 1.5rem;
+    animation: none !important;
+    margin-bottom: 1rem;
+}
 .paragrafo{
-font-size: 20px;
+font-size: 1.2rem;
 color: rgb(255, 255, 255);
 padding-top: 15px;
 padding-left: 15px;
 padding-right: 15px;
 font-family: "Verdana";
+margin-bottom: 2rem;
 }
 
 #last{
 margin-bottom: 100px;
 }
-
+#last-linha{
+    margin-top: 5%;
+}
 .last-title {
     width: 100%;
 }
@@ -230,7 +284,7 @@ border: 0.1rem solid #8D39EC;
 cursor:pointer;
 background-color: black;
 color: white;
-width: 15rem;
+width: 10rem;
 height: 3rem;
 font-family: 'nunito';
 text-decoration: none;;
@@ -240,20 +294,24 @@ text-decoration: none;;
 img{
 max-width: 300px;
 background-position: left;
+transition: 0.4s;
+}
+#logo:hover{
+    transform: scale3d(1.2,1.2,1.2);
 }
 #imglinkedin{
 max-width: 20px;
 }
 
 .linha{
-display: inline-flex;
+display: flex;
 align-items: center;
-justify-content: center;
+justify-content: space-evenly;
 animation: none;
+margin-top: 0.5rem;
 }
 
 button{
-margin-left: 40vh;
 color: white;
 width: 100px;
 height: 60px;
@@ -262,22 +320,22 @@ border:5px inset #8D39EC;
 border-radius: 7px;
 cursor: pointer;
 display: flex;
-flex-direction: column;
+justify-content: center;
 }
 button:hover{
-transition: all 2s ease;
-background-color: rgb(66, 65, 65);
-color: black;
+transform: scale3d(1.05,1.05,1.05);
 }
 
 #logo{
-margin: 0 auto;
-margin-top: 90px;
+cursor: pointer;
+}
+
+#exp{
+    display: flex;
+    justify-content: flex-start;
 }
 
 #certificado{
-margin-top: 90px;
-text-align: center;
 border: none;
 }
 #linkedin{
@@ -286,44 +344,38 @@ border: none;
 #github{
 border: none;
 }
+
 #linkedinimg{
-max-width: 45px;
+max-width: 3rem;
 margin: 0 auto;
-margin-top: 2px;
-margin-left: 60%;
 }
 
 #githubimg{
-    max-width: 45px;
+    max-width: 3rem;
     margin: 0 auto;
-    margin-top: 2px;
-    margin-left: 60%;
+
 }
 
 #certificadoimg{
-    max-width: 50px;
-    margin: 0 auto;
-    margin-top: 2px;
-    margin-left: 60%;
+    max-width: 80%;
 }
 
-#certificado{
-    width: 120px;
-    height: 70px;
-}
+
 #gatinho{
     background-size: contain;
     background-image: url(imgs/Ilustração-Sem-Título-removebg-preview.png);
     width: 300px;
     height: 300px;
+    margin-right: 10rem;
 }
 #gatinho:hover{
-    animation: slide 1s;
+    animation: troca 0.5s;
 }
 #last{
     flex-direction: row;
 }
 footer{
     color: white;
+    font-family: 'lombok';
 }
 
