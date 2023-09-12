@@ -41,7 +41,11 @@ a{
    margin-top: 0.2rem;
    cursor: pointer;
 }
+#h2:hover{
 
+        animation: slide 2s ease-in-out;
+    
+}
 
 .navegacao:hover{
     animation: shine 2s;
@@ -149,7 +153,11 @@ body{
     }
 }
 
-
+@keyframes slide {
+    to{
+        transform: translateX(50px);
+    }
+}
 @keyframes borda {
     0%{
         border:1px inset #8D39EC;
@@ -361,10 +369,17 @@ margin: 0 auto;
     margin-right: 10rem;
 }
 #gatinho:hover{
-    animation: troca 1s;
+    animation: troca 0.5s;
 }
 #last{
     flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    text-decoration:none;
+    justify-content: space-around;
+    height: 100%;
 }
 footer{
     color: white;
