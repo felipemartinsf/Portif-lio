@@ -8,7 +8,7 @@
 #port{
     font-family: 'nunito';
     color: #8748ce;
-    font-size: 60px;
+    font-size: 62px;
     margin-top: 30px;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -209,11 +209,7 @@ h1:hover{
 #taxa1{
     margin-top: 10rem;
 }
-/*
-.taxa:hover{
-    animation: borda 2s ease-in-out infinite;
-}
-*/
+
 @keyframes troca{
    0%{
     transform: translateX(0px);
