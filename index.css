@@ -90,9 +90,17 @@ body{
         display: none;
     }
     .taxa{
+        display: flex;
         flex-direction: column;
         margin-left: 5vh;
         height: 120vh  !important;
+        justify-content: space-around !important;
+    }
+    #last{
+        display: flex;
+        flex-direction: row;
+        flex-direction: column !important;
+        justify-content: center !important;
     }
     .linha{
         flex-direction: column;
@@ -197,6 +205,9 @@ h1:hover{
     text-align: center;
     overflow:hidden;
     transition: 0.4s;
+}
+#taxa1{
+    margin-top: 10rem;
 }
 /*
 .taxa:hover{
