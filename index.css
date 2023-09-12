@@ -1,0 +1,388 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    behavior: 'smooth';
+}
+#port{
+    font-family: 'nunito';
+    color: #8748ce;
+    font-size: 60px;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    text-decoration:none;
+    justify-content: center;
+}
+a{
+    text-decoration:none;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+    font-size: 1.2rem;
+}
+#card3{
+    margin-bottom: 0 !important;
+}
+.navegacao{
+    margin-bottom: 2rem;
+    font-family: 'nunito';
+}
+#h2{
+    color: white;
+    font-family: 'nunito';
+    font-size: 1rem;
+   text-align: left;
+   margin-top: 0.2rem;
+   cursor: pointer;
+}
+#h2:hover{
+
+        animation: slide 2s ease-in-out;
+    
+}
+
+.navegacao:hover{
+    animation: shine 2s;
+}
+
+.info{
+    margin-top: 4rem;
+}
+a:hover{
+    transform: scale3d(1.2,1.2,1.2);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    background-color: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width:768px){
+    .row{
+    display: flex;
+    flex-direction: column;
+    }
+    #port{
+        margin:0;
+    }
+    #gatinho{
+        margin-right: 0 !important;
+    }
+    #first-nav{
+        display: none;
+    }
+    .taxa{
+        flex-direction: column;
+        margin-left: 5vh;
+        height: 120vh  !important;
+    }
+    .linha{
+        flex-direction: column;
+    }
+    #titulo{
+        font-size: 50px;
+    }
+    #linkedin{
+        margin-top: 1.5rem !important;
+    }
+    #logo{
+        max-width: 15rem;
+        margin-bottom: 1rem;
+    }
+    #h2{
+        text-align: center;
+    }
+    .paragrafo{
+        font-size: 0.5rem;
+    }
+
+ 
+}
+
+
+#eu{
+    margin-top: 200px;
+    max-width: 100px;
+
+}
+
+@font-face {
+    font-family: 'lombok';
+    src: url('fontes/Lombok\ Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'nunito';
+    src: url('fontes/Nunito-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes bounce {
+    0%,20%,60%,100% {
+        -webkit-tranform:translateY(0);
+        transform: translateY(0);
+    }
+    40%{
+        -webkit-tranform:translateY(-8px);
+        transform: translateY(-8px);
+    }
+    80%{
+        -webkit-tranform:translateY(-4px);
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes slide {
+    to{
+        transform: translateX(50px);
+    }
+}
+@keyframes borda {
+    0%{
+        border:1px inset #8D39EC;
+    }
+    20%{
+        border:2px inset #8d39ece5;
+    }
+    40%{
+        border:3px inset #7a22dfe5;
+    }
+    60%{
+        border:4px inset #8d39ece5;
+    }
+    80%{
+        border:3px inset #8d39ece5;
+    }
+    100%{
+        border:1px inset #8D39EC;
+    }
+}
+
+h1:hover{
+    animation: bounce 1s;
+}
+
+/* Partes alem do início*/
+
+.taxa{
+    background-color: black;
+    height: 500px;
+    width: 80vw;
+    border-radius: 10px;
+    margin-bottom: 30rem;
+    border:1px inset #8D39EC;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow:hidden;
+    transition: 0.4s;
+}
+/*
+.taxa:hover{
+    animation: borda 2s ease-in-out infinite;
+}
+*/
+@keyframes troca{
+   0%{
+    transform: translateX(0px);
+   }
+   100%{
+    
+    background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
+   }
+}
+
+@keyframes shine{
+    0%{
+        color: white;
+    }
+    20%{
+        color: #8748ce;
+    }
+    40%{
+        color: white;
+    }
+    60%{
+        color: #8748ce;
+    }
+    80%{
+        color: white;
+    }
+    100%{
+        color: #8748ce;
+    }
+}
+
+.titulo{
+    color: #7427cc;
+    padding-top: 4px;
+    cursor: pointer;
+    font-family: 'nunito', Courier, monospace;
+}
+.sub{
+    color: white;
+    font-family: 'nunito';
+    font-size: 1.5rem;
+    animation: none !important;
+    margin-bottom: 1rem;
+}
+.paragrafo{
+font-size: 1.2rem;
+color: rgb(255, 255, 255);
+padding-top: 15px;
+padding-left: 15px;
+padding-right: 15px;
+font-family: "Verdana";
+margin-bottom: 2rem;
+}
+
+#last{
+margin-bottom: 100px;
+}
+#last-linha{
+    margin-top: 5%;
+}
+.last-title {
+    width: 100%;
+}
+
+.last-content {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects{
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 0.2rem;
+border: 0.1rem solid #8D39EC;
+cursor:pointer;
+background-color: black;
+color: white;
+width: 10rem;
+height: 3rem;
+font-family: 'nunito';
+text-decoration: none;;
+}
+
+
+img{
+max-width: 300px;
+background-position: left;
+transition: 0.4s;
+}
+#logo:hover{
+    transform: scale3d(1.2,1.2,1.2);
+}
+#imglinkedin{
+max-width: 20px;
+}
+
+.linha{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+animation: none;
+margin-top: 0.5rem;
+}
+
+button{
+color: white;
+width: 100px;
+height: 60px;
+background-color: black;
+border:5px inset #8D39EC;
+border-radius: 7px;
+cursor: pointer;
+display: flex;
+justify-content: center;
+}
+button:hover{
+transform: scale3d(1.05,1.05,1.05);
+}
+
+#logo{
+cursor: pointer;
+}
+
+#exp{
+    display: flex;
+    justify-content: flex-start;
+}
+
+#certificado{
+border: none;
+}
+#linkedin{
+border: none;
+}
+#github{
+border: none;
+}
+
+#linkedinimg{
+max-width: 3rem;
+margin: 0 auto;
+}
+
+#githubimg{
+    max-width: 3rem;
+    margin: 0 auto;
+
+}
+
+#certificadoimg{
+    max-width: 80%;
+}
+
+
+#gatinho{
+    background-size: contain;
+    background-image: url(imgs/Ilustração-Sem-Título-removebg-preview.png);
+    width: 300px;
+    height: 300px;
+    margin-right: 10rem;
+}
+#gatinho:hover{
+    animation: troca 0.5s;
+}
+#last{
+    flex-direction: row;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    text-decoration:none;
+    justify-content: space-around;
+    height: 100%;
+}
+footer{
+    color: white;
+    font-family: 'lombok';
+}
+
