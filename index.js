@@ -19,6 +19,15 @@ function link (){
     var win = window.open('https://www.unifesp.br/', '_blank');
     win.focus();
 }
+/*
+var cursor = document.getElementById('cursor');
+document.addEventListener('mousemove', function(e){
+    var x = e.clientX;
+    var y = e.clientY;
+    cursor.style.left = x + "px"
+    cursor.style.top = y + "px"
+})
+*/
 
 let a = document.getElementById('card1')
 let b = document.getElementById('card2')

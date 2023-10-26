@@ -116,8 +116,24 @@ body{
 
  
 }
-
-
+/*
+#cursor{
+   position: absolute;
+   width: 100px;
+   height: 100px;
+   border: 2px solid #7427cc;
+   box-sizing: border-box;
+   transition: 0.1s;
+   transform: translate(-50%,-50%);
+   border-radius: 50%;
+   background-color: #7427cc;
+   pointer-events: none;
+   -webkit-filter: blur(10px);
+   -moz-filter: blur(10px);
+   -o-filter: blur(10px);
+   -ms-filter: blur(10px);
+}
+*/
 #eu{
     margin-top: 200px;
     max-width: 100px;
@@ -195,8 +211,11 @@ h1:hover{
     align-items: center;
     justify-content: center;
     text-align: center;
-    overflow:hidden;
     transition: 0.4s;
+    -webkit-box-shadow:0px 0px 53px 10px rgba(135,21,163,0.66);
+    -moz-box-shadow: 0px 0px 53px 10px rgba(135,21,163,0.66);
+    box-shadow: 0px 0px 53px 10px rgba(135,21,163,0.66);
+    overflow: hidden;
 }
 /*
 .taxa:hover{
@@ -239,6 +258,7 @@ h1:hover{
     padding-top: 4px;
     cursor: pointer;
     font-family: 'nunito', Courier, monospace;
+  
 }
 .sub{
     color: white;
