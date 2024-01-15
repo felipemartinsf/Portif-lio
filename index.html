@@ -31,7 +31,35 @@
         <h1 class="titulo"> Sobre mim</h1>
         <p class="paragrafo">Nasci em Araraquara-SP, me mudei para São José dos Campos em 2022. Sou paciente e com ótima comunicação, conseguindo me adaptar a qualquer ambiente de trabalho.</p>
         <span class="linha">
-            <nav id="exp"><h1 class="sub">Experiências prévias</h1><a id="h2" href="https://br.linkedin.com/company/ti-automotive" target="_blank">-TI Automotive Brasil<footer>Estágiario em  TI</footer></a></nav>
+            <nav id="exp"><h1 class="sub">Experiências</h1>
+                <span class="row-exp">
+                    <a id="h2" target="_blank" onclick ="firstOption()">TI Automotive Brasil</a>
+                    <div class="info-exp" id="minhaDiv">
+                        <h3> Suporte técnico de TI</h3>
+                        
+  <section>
+    <h4>São José dos Campos, São Paulo, Brasil</h4>
+    <p style="color: rgb(113, 115, 117);">06/2023 - 12/2023</p>
+    <ul style="list-style-position: inside">
+      <li>Conserto de computadores e impressoras;</li>
+      <li>Manutenção de servidores e redes;</li>
+      <li>Instalação e reparação de programas.</li>
+    </ul>
+  </section>
+                       
+                        <img src="imgs/x.png" alt="sair" onclick="esconderDiv()" style="max-width: 2rem; margin-right:0;">
+                    </div>
+                </span>
+                <span class="row-exp">
+                    <a id="h2"  target="_blank" onclick="mostrarDiv2()">Johnson & Johnson </a>
+                <div class="info-exp" id="minhaDiv2"> 
+                    <h3> Engenharia e desenvolvimento de sistemas</h3>
+                    <h4>São José dos Campos, São Paulo, Brasil</h4>
+                    <p></p>
+                    <img src="imgs/x.png" alt="sair" onclick="esconderDiv2()" style="max-width: 2.5rem;">
+                </div>
+            </span>
+            </nav>
             <nav> <button id="linkedin" class="info"><a href="https://www.linkedin.com/in/felipe-martins-ba5629243/" target="_blank"><img id="linkedinimg" src="imgs/linkedin.png"></a></button>
                 <button id="github" class="info"><a href="https://github.com/felipemartinsf" target="_blank"><img id="githubimg" src="imgs/github.png"></a></button></nav> 
         </span>
@@ -52,25 +80,25 @@
         <span class="last-content">
             <div class="column">
             <a href="https://github.com/felipemartinsf/AED2"  target="_blank">
-                <div class="projects">Algoritmos em C</div>
+                <div class="projects">Algoritmos em C<img class="img-projects"  src="imgs/c.png" alt="c"></div>
             </a>
             <a href="https://github.com/felipemartinsf/Galeria" target="_blank">
-                <div class="projects">Galeria</div>
+                <div class="projects">Galeria <img class="img-projects"  src="imgs/galeria.png" alt="c"></div>
             </div>
         </a>
         <div class="column">
             <a href="https://github.com/felipemartinsf/ProjetoAoc"  target="_blank">
-                <div class="projects">React</div>
+                <div class="projects">React <img class="img-projects"  src="imgs/React.png" alt="c"></div>
             </a>
             <a href="https://github.com/felipemartinsf/TypeScript" target="_blank">
-                <div class="projects">POO</div>
+                <div class="projects">POO <img class="img-projects"  src="imgs/oop.png" alt="c"></div>
             </a>
         </div>
         </span>
         
     </div>
 
-<footer>Produzido somente com HTML, CSS E JavaScript. Arte do meu rosto feita por @weird_agatha.
+<footer>Produzido somente com HTML, CSS E JavaScript.
 </footer>
     </main>
     <script src="index.js"></script>

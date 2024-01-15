@@ -26,6 +26,12 @@ a{
     transition: 0.4s;
     font-size: 1.2rem;
 }
+h4{
+    animation:shine 5s infinite;
+}
+li{
+    font-family:  'nunito';
+}
 #card3{
     margin-bottom: 0 !important;
 }
@@ -41,11 +47,7 @@ a{
    margin-top: 0.2rem;
    cursor: pointer;
 }
-#h2:hover{
 
-        animation: slide 2s ease-in-out;
-    
-}
 
 .navegacao:hover{
     animation: shine 2s;
@@ -57,6 +59,7 @@ a{
 a:hover{
     transform: scale3d(1.2,1.2,1.2);
 }
+
 .container {
     display: flex;
     flex-direction: column;
@@ -169,31 +172,7 @@ body{
     }
 }
 
-@keyframes slide {
-    to{
-        transform: translateX(50px);
-    }
-}
-@keyframes borda {
-    0%{
-        border:1px inset #8D39EC;
-    }
-    20%{
-        border:2px inset #8d39ece5;
-    }
-    40%{
-        border:3px inset #7a22dfe5;
-    }
-    60%{
-        border:4px inset #8d39ece5;
-    }
-    80%{
-        border:3px inset #8d39ece5;
-    }
-    100%{
-        border:1px inset #8D39EC;
-    }
-}
+
 
 h1:hover{
     animation: bounce 1s;
@@ -214,12 +193,19 @@ h1:hover{
     transition: 0.4s;
     box-shadow: 0px 0px 53px 10px rgba(135,21,163,0.66);
 }
-/*
+
 .taxa:hover{
-    animation: borda 2s ease-in-out infinite;
+    box-shadow: 0px 0px 70px 20px rgba(135,21,163,0.66);
 }
-*/
-@keyframes troca{
+@keyframes jump {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Ajuste a altura conforme necessário */
+    }
+  }
+/*@keyframes troca{
    0%{
     transform: translateX(0px);
    }
@@ -227,7 +213,7 @@ h1:hover{
     
     background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
    }
-}
+}*/
 
 @keyframes shine{
     0%{
@@ -264,6 +250,71 @@ h1:hover{
     animation: none !important;
     margin-bottom: 1rem;
 }
+.row-exp{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+} 
+
+.info-exp{
+    background-color: black;
+    color: white;
+
+    width: 40vw;
+    border-radius: 10px;
+    margin-bottom: 30rem;
+    flex-direction: column;
+    justify-content: space-between !important;
+    border:1px inset #8D39EC;
+    transition: 0.4s;
+    box-shadow: 0px 0px 53px 10px rgba(135,21,163,0.66);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    position: absolute;
+}
+
+/* CSS */
+.button-6 {
+  align-items: center;
+  background-color: #000000;
+  border: 1px solid #8D39EC;
+  border-radius: .25rem;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'nunito';
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
 .paragrafo{
 font-size: 1.2rem;
 color: rgb(255, 255, 255);
@@ -302,16 +353,21 @@ cursor:pointer;
 background-color: black;
 color: white;
 width: 10rem;
-height: 3rem;
+height: 5rem;
+font-size: 1rem;
 font-family: 'nunito';
 text-decoration: none;;
 }
-
+.img-projects{
+    margin-left: 1rem;
+    max-width: 4rem;
+}
 
 img{
 max-width: 300px;
 background-position: left;
 transition: 0.4s;
+cursor: pointer;
 }
 #logo:hover{
     transform: scale3d(1.2,1.2,1.2);
@@ -380,14 +436,15 @@ margin: 0 auto;
 
 #gatinho{
     background-size: contain;
-    background-image: url(imgs/Ilustração-Sem-Título-removebg-preview.png);
+    background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
     width: 300px;
     height: 300px;
     margin-right: 10rem;
 }
 #gatinho:hover{
-    animation: troca 0.5s;
+    animation: jump 2s infinite;
 }
+
 #last{
     flex-direction: row;
 }

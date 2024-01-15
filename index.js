@@ -19,6 +19,44 @@ function link (){
     var win = window.open('https://www.unifesp.br/', '_blank');
     win.focus();
 }
+function firstOption(){
+  mostrarDiv()
+  esconderDiv2()
+}
+function mostrarDiv() {
+    var minhaDiv = document.getElementById("minhaDiv");
+    minhaDiv.style.display = "inline-block";
+    setTimeout(function() {
+      minhaDiv.style.opacity = "1";
+    }, 10); // Adicione um pequeno atraso para garantir que a transição ocorra após a exibição
+  }
+  
+  function esconderDiv() {
+    var minhaDiv = document.getElementById("minhaDiv");
+    minhaDiv.style.opacity = "0";
+    setTimeout(function() {
+      minhaDiv.style.display = "none";
+    }, 500); // Atraso de 500ms, correspondente à duração da transição
+  }
+
+  function mostrarDiv2() {
+    var minhaDiv = document.getElementById("minhaDiv2");
+    minhaDiv.style.display = "inline-block";
+    minhaDiv.style.positon = "absolute";
+    setTimeout(function() {
+      minhaDiv.style.opacity = "1";
+    }, 10); // Adicione um pequeno atraso para garantir que a transição ocorra após a exibição
+  }
+  
+  function esconderDiv2() {
+    var minhaDiv = document.getElementById("minhaDiv2");
+    minhaDiv.style.opacity = "0";
+    setTimeout(function() {
+      minhaDiv.style.display = "none";
+    }, 500); // Atraso de 500ms, correspondente à duração da transição
+  }
+  
+
 /*
 var cursor = document.getElementById('cursor');
 document.addEventListener('mousemove', function(e){
