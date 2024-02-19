@@ -1,4 +1,4 @@
 
-Resumo de informações minhas como programador.
-Funciona no mobile também :)
+All my informations as a programmer.
+Works on mobile too :)
 
