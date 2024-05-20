@@ -28,6 +28,10 @@ a{
 }
 h4{
     animation:shine 5s infinite;
+    font-family:  'nunito';
+}
+h3{
+    font-family:  'nunito';
 }
 li{
     font-family:  'nunito';
@@ -259,19 +263,36 @@ h1:hover{
 .info-exp{
     background-color: black;
     color: white;
-
-    width: 40vw;
+    width: 25vw;
+    height: 60vh;
     border-radius: 10px;
     margin-bottom: 30rem;
     flex-direction: column;
     justify-content: space-between !important;
-    border:1px inset #8D39EC;
+    border:1px inset #f6f5f7;
     transition: 0.4s;
-    box-shadow: 0px 0px 53px 10px rgba(135,21,163,0.66);
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    position: absolute; 
+    padding: 1rem;  
+    box-sizing: border-box;
+}
+
+.info-exp ul {
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Alinha o texto dos itens da lista à esquerda */
+    margin-top: 20%;
+}
+
+.info-exp img {
     position: absolute;
+    bottom: 1rem; /* Distância do fundo do `div` */
+    right: 1rem; /* Distância da direita do `div` */
+    max-width: 2.5rem;
+    cursor: pointer;
 }
 
 /* CSS */
