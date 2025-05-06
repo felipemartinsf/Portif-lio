@@ -42,6 +42,8 @@ li{
 .navegacao{
     margin-bottom: 2rem;
     font-family: 'nunito';
+    justify-content: space-between; 
+
 }
 #h2{
     color: white;
@@ -50,6 +52,22 @@ li{
    text-align: left;
    margin-top: 0.2rem;
    cursor: pointer;
+}
+
+.row-title {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+  }
+
+#nome{
+    margin-right: 1rem;
+}
+
+#sumario{
+    margin-left: 1rem;
+    font-size: 3rem !important;
 }
 
 
@@ -187,7 +205,7 @@ h1:hover{
 .taxa{
     background-color: black;
     height: 500px;
-    width: 80vw;
+    width: 60vw;
     border-radius: 10px;
     margin-bottom: 30rem;
     border:1px inset #8D39EC;
@@ -402,7 +420,7 @@ display: flex;
 align-items: center;
 justify-content: space-evenly;
 animation: none;
-margin-top: 0.5rem;
+margin-top: 2rem;
 }
 
 button{
