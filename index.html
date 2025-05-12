@@ -25,7 +25,7 @@
                 <!-- Coluna esquerda - Imagem de perfil -->
                 <div class="perfil-container">
                         <img src="imgs/eu.png" alt="Felipe Martins Francisco">
-                    <p class="bio-curta">Cientista de dados em formação. Sempre procurando aprender e me desenvolver</p>
+                    <p class="bio-curta">Cientista de dados em formação. Sempre procurando aprender e me desenvolver.</p>
                 </div>
                 
                 <!-- Coluna direita - Menu de navegação -->
@@ -88,15 +88,17 @@
                     <div class="experiencia-item">
                         <h3>TI AUTOMOTIVE</h3>
                         <p class="cargo">Estágiario em Suporte técnico de TI</p>
-                        <p class="periodo">JAN/2023 - DEZ/2023</p>
+                        <p class="periodo">01/2023 - 12/2023</p>
                         <p class="descricao">Manutenção de computadores e equipamentos. Instalação e reparação de programas. Manutenção de servidores e redes.</p>
                     </div>
                     
                     <div class="experiencia-item">
-                        <h3>JNJ</h3>
+                        <h3>JOHNSON & JOHNSON</h3>
                         <p class="cargo">Engenharia de dados</p>
-                        <p class="periodo">JAN/2024<section>mes/ano</section></p>
-                        <p class="descricao">ETL de dados, utilizando principalmente apache-airflow e node-red. Desenvolvimento de inteligências artificiais de regressão. Usado o DataBricks e MicrosoftSQLServer para o extract de dados. Utilização de docker para utilização de sistemas.</p>
+                        <p class="periodo">
+                            01/2024 - <span class="periodo" id="data-atual"></span>
+                        </p>
+                        <p class="descricao">ETL de dados, utilizando principalmente apache-airflow e node-red. Desenvolvimento de inteligências artificiais de regressão. Uso o DataBricks e MicrosoftSQLServer para o extract de dados. Utilização de docker para utilização de sistemas.</p>
                     </div>
                 </div>
                 
@@ -123,19 +125,18 @@
                 <!-- Coluna Esquerda -->
                 <div class="coluna-esquerda">
                     <div class="curso-info">
-                        <p>Ciência da Computação. Estou no ano <span id="calcularAno()"><!-- Script calculará anos desde 2022 --></span> de curso.</p>
-                        <p>Focado em desenvolvimento de algoritmos eficientes e aplicações de inteligência artificial.</p>
+                        <p>Meu curso na UNIFESP é dividido em dois bacharelados. Estou no <span id="ano-contador"><!-- Script calculará anos desde 2022 --></span>º ano do curso total. Comecei o curso de bacharelado em ciência e tecnologia em 01/2023 e completo em dezembro de 2025. Em 2026, começarei e terminarei o curso de bacharelado em ciência da computação</p>
                     </div>
                     
                     <div class="certificados">
-                        <div class="certificado-item">
-                            <img src="imgs/en.png" alt="Certificado de Inglês">
+                        <a class="certificado-item"  href="dowload/EF SET Certificate.pdf">
+                            <img src="imgs/cer.png" alt="Certificado de Inglês">
                             <span>Certificado de Proficiência em Inglês</span>
-                        </div>
-                        <div class="certificado-item">
-                            <img src="imgs/project.png" alt="Certificado de Projetos">
+                        </a>
+                        <a class="certificado-item" href="dowload/proj.pdf">
+                            <img src="imgs/proj.png" alt="Certificado do curso de Project pela JnJ" >
                             <span>Certificado de Gestão de Projetos</span>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 
@@ -147,16 +148,16 @@
                     <h2>Python</h2>
                     <ul class="skills-list">
                         <li>
-                            <div class="skill-item">
-                                <img class="img-skills" src="imgs/Py.webp" alt="Python">
-                                <span>Inteligência Artificial</span>
-                            </div>
+                            <a class="skill-item" href="https://github.com/felipemartinsf/Projeto-IA" target="_blank">
+                                <img class="img-skills" src="imgs/Py.webp" alt="Botao para ir para o Portfolio" >
+                                <span>Projeto para a matéria de IA</span>
+                            </a>
                         </li>
                         <li>
-                            <div class="skill-item">
-                                <img class="img-skills" src="imgs/ml.png" alt="Machine Learning">
-                                <span>Machine Learning</span>
-                            </div>
+                            <a class="skill-item" href="https://github.com/convince-ai/convinceai-LLM" target="_blank">
+                                <img class="img-skills" src="imgs/en.png" alt="Machine Learning">
+                                <span>Projeto para a matéria de Engenharia de software</span>
+                            </a>
                         </li>
                     </ul>
                     
