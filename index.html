@@ -13,105 +13,173 @@
 <body>
     <main>
  
-        <h1 id='port'>Portifólio</h1>
- 
- 
-    <div id='taxa1' class="taxa">
-        <div class="row-title">
-        <h1 class="titulo" id="sumario">Sumario</h1>
-        <h2 class="titulo" id="nome">Felipe Martins Francisco</h2>
-        </div>
-
-        <!-- <p class="paragrafo">Olá, sou um desenvolvedor ainda em formação, amo muito a área de tecnologia e sempre estou procurando aprender algo novo.</p> -->
-        <!--<div id="cursor"></div>-->
-       <span class="linha">
-        <div id="gatinho"></div>
-       <nav id="first-nav"> <a class="navegacao" id="card1">Vida pessoal</a> <a class="navegacao" id="card2">Vida profissional</a> <a  class="navegacao" id="card3">Conhecimentos</a></nav>
-       </span>
-      
-    </div>
-
-    <div id='first' class="taxa" >
-        <h1 class="titulo"> Sobre mim</h1>
-        <p class="paragrafo">Nasci em Araraquara-SP, me mudei para São José dos Campos em 2022. Sou paciente e com ótima comunicação, conseguindo me adaptar a qualquer ambiente de trabalho.</p>
-        <span class="linha">
-            <nav id="exp"><h1 class="sub">Experiências</h1>
-                <span class="row-exp">
-                    <a id="h2" target="_blank" onclick ="firstOption()">TI Automotive Brasil</a>
-                    <div class="info-exp" id="minhaDiv">
-                        <h3> Suporte técnico de TI</h3>
-                        
-  <section>
-    <h4>São José dos Campos, São Paulo, Brasil</h4>
-    <p style="color: rgb(113, 115, 117);">06/2023 - 12/2023</p>
-    <ul style="list-style-position: inside">
-      <li>Conserto de computadores e impressoras;</li>
-      <li>Manutenção de servidores e redes;</li>
-      <li>Instalação e reparação de programas.</li>
-    </ul>
-  </section>
-                       
-                        <img src="imgs/x.png" alt="sair" onclick="esconderDiv()" style="max-width: 2rem; margin-right:0;">
-                    </div>
-                </span>
-                <span class="row-exp">
-                    <a id="h2"  target="_blank" onclick="mostrarDiv2()">Johnson & Johnson </a>
-                <div class="info-exp" id="minhaDiv2"> 
-                    <h3> Engenharia e desenvolvimento de sistemas</h3>
-                    <h4>São José dos Campos, São Paulo, Brasil</h4>
-                    <p style="color: rgb(113, 115, 117);">01/2024 - </p>
-                    <ul style="list-style-position: inside">
-                        <li>Análise e manutenção do fluxo de dados com javascript (Node Red);</li>
-                        <li>Criação e manutenção de banco de dados em SQL - DataBricks e MicrosoftSQLServer;</li>
-                        <li>Automação de sistemas e sites (scraping, python, selenium);</li>
-                        <li>Análise e criação de dashboards(PowerBI);</li>
-                        <li>Automação de sistemas e sites (scraping, python, selenium);</li>
-                      </ul>
-                    <img src="imgs/x.png" alt="sair" onclick="esconderDiv2()" style="max-width: 2.5rem;">
-                </div>
-            </span>
-            </nav>
-            <nav> <button id="linkedin" class="info"><a href="https://www.linkedin.com/in/felipe-martins-ba5629243/" target="_blank"><img id="linkedinimg" src="imgs/linkedin.png"></a></button>
-                <button id="github" class="info"><a href="https://github.com/felipemartinsf" target="_blank"><img id="githubimg" src="imgs/github.png"></a></button></nav> 
-        </span>
-    </div>
-
-
-    <div id='taxa2' class="taxa" >
-        <h1 class="titulo"> Universidade Federal de São Paulo</h1>
-        <p class="paragrafo">Estou no meu quarto período de oito, cursando Ciência da Computação na UNIFESP. Possuo conhecimento nas linguagens C, JavaScript, CSS e HTML. Possuo inglês proficiente segundo certificado: EF SET CERTIFICATE.</p>
-        <span class="linha" id="last-linha">
-        <img id='logo' src="imgs/LOGO_PRETO_E_VERDE_1.png" href="">
-        <button id='certificado'><a href="dowload/EF SET Certificate.pdf"><img id="certificadoimg" src="imgs/en.png"></a></button>
-        </span>
-    </div>
-
-  <div class="taxa" id="last">
-            <h1 class="titulo" id="lastt"> Conhecimentos</h1>
-        <span class="last-content">
-            <div class="column">
-            <a href="https://github.com/felipemartinsf/AED2"  target="_blank">
-                <div class="projects">Algoritmos em C<img class="img-projects"  src="imgs/c.png" alt="c"></div>
-            </a>
-            <a href="https://github.com/felipemartinsf/machinelearning-python" target="_blank">
-                <div class="projects">ML<img class="img-projects"  src="imgs/Py.webp" alt="c"></div>
+        <h1 id="port">Portfólio</h1>
+    
+        <div id="taxa1" class="taxa">
+            <div class="header-container">
+                <h1 class="titulo" id="sumario">Sumário</h1>
+                <h2 class="titulo" id="nome">Felipe Martins Francisco</h2>
             </div>
-        </a>
-        <div class="column">
-            <a href="https://github.com/felipemartinsf/ProjetoAoc"  target="_blank">
-                <div class="projects">React <img class="img-projects"  src="imgs/React.png" alt="c"></div>
-            </a>
-            <a href="https://github.com/felipemartinsf/TypeScript" target="_blank">
-                <div class="projects">POO <img class="img-projects"  src="imgs/oop.png" alt="c"></div>
-            </a>
+            
+            <div class="hub-container">
+                <!-- Coluna esquerda - Imagem de perfil -->
+                <div class="perfil-container">
+                        <img src="imgs/eu.png" alt="Felipe Martins Francisco">
+                    <p class="bio-curta">Cientista de dados em formação. Sempre procurando aprender e me desenvolver</p>
+                </div>
+                
+                <!-- Coluna direita - Menu de navegação -->
+                <div class="menu-navegacao">                    
+                    <div class="menu-cards">
+                        <a class="card-nav" id="card1" href="#first">
+                            <div class="card-info">
+                                <h4>Vida Pessoal</h4>
+                                <p>Conheça um pouco sobre mim, minhas origens e interesses</p>
+                            </div>
+                        </a>
+                        
+                        <a class="card-nav" id="card2" href="#taxa2">
+                            <div class="card-info">
+                                <h4>Vida Profissional</h4>
+                                <p>Minha trajetória, experiências e conexões profissionais</p>
+                            </div>
+                        </a>
+                        
+                        <a class="card-nav" id="card3" href="#last">
+                            <div class="card-info">
+                                <h4>Conhecimentos</h4>
+                                <p>Habilidades técnicas, certificações e projetos desenvolvidos</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Elemento decorativo do gatinho, mantido do código original -->
+            <div id="gatinho"></div>
         </div>
-        </span>
+    
+    
+<div id="first" class="taxa">
+    <h1 class="titulo">Vida Pessoal</h1>
+    
+    <div class="vida-pessoal-container">
+        <div class="texto-biografia">
+            <p class="paragrafo">
+                Sou natural de Araraquara, cidade no interior de São Paulo, e me mudei para São José dos Campos em 2022 em busca de novas oportunidades e experiências. Sou corinthiano, mas também tenho um carinho especial pela Ferroviária, time da minha terra natal.
+            </p>
+            <p class="paragrafo">
+                Gosto de ouvir música e me perder em filmes que me desafiem a ver o mundo de perspectivas diferentes. Adoro experimentar doces que nunca tinha experimentado antes.
+            </p>
+        </div>
         
+        <div class="imagem-perfil">
+            <img src="imgs/arte portfolio.png" alt="Algumas imagens que eu gosto">
+        </div>
     </div>
+</div>
 
-<footer>Produzido somente com HTML, CSS E JavaScript.
-</footer>
-    </main>
+
+        <div id="taxa2" class="taxa">
+            <h1 class="titulo">Vida profissional</h1>
+            
+            <div class="experiencia-container">
+                <div class="experiencias">
+                    <div class="experiencia-item">
+                        <h3>TI AUTOMOTIVE</h3>
+                        <p class="cargo">Estágiario em Suporte técnico de TI</p>
+                        <p class="periodo">JAN/2023 - DEZ/2023</p>
+                        <p class="descricao">Manutenção de computadores e equipamentos. Instalação e reparação de programas. Manutenção de servidores e redes.</p>
+                    </div>
+                    
+                    <div class="experiencia-item">
+                        <h3>JNJ</h3>
+                        <p class="cargo">Engenharia de dados</p>
+                        <p class="periodo">JAN/2024<section>mes/ano</section></p>
+                        <p class="descricao">ETL de dados, utilizando principalmente apache-airflow e node-red. Desenvolvimento de inteligências artificiais de regressão. Usado o DataBricks e MicrosoftSQLServer para o extract de dados. Utilização de docker para utilização de sistemas.</p>
+                    </div>
+                </div>
+                
+                <!-- Coluna direita com botões de redes sociais -->
+                <div class="redes-sociais">
+                    <a href="https://www.linkedin.com/in/felipe-martins-ba5629243/" target="_blank" class="rede-social-item">
+                        <img src="imgs/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    
+                    <a href="https://github.com/felipemartinsf" target="_blank" class="rede-social-item">
+                        <img src="imgs/github.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="taxa" id="last">
+            <h1 class="titulo" id="lastt">Conhecimentos</h1>
+            
+            <div class="conhecimentos-container">
+                <!-- Coluna Esquerda -->
+                <div class="coluna-esquerda">
+                    <div class="curso-info">
+                        <p>Ciência da Computação. Estou no ano <span id="calcularAno()"><!-- Script calculará anos desde 2022 --></span> de curso.</p>
+                        <p>Focado em desenvolvimento de algoritmos eficientes e aplicações de inteligência artificial.</p>
+                    </div>
+                    
+                    <div class="certificados">
+                        <div class="certificado-item">
+                            <img src="imgs/en.png" alt="Certificado de Inglês">
+                            <span>Certificado de Proficiência em Inglês</span>
+                        </div>
+                        <div class="certificado-item">
+                            <img src="imgs/project.png" alt="Certificado de Projetos">
+                            <span>Certificado de Gestão de Projetos</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Linha Divisória -->
+                <div class="linha-divisoria"></div>
+                
+                <!-- Coluna Direita -->
+                <div class="coluna-direita">
+                    <h2>Python</h2>
+                    <ul class="skills-list">
+                        <li>
+                            <div class="skill-item">
+                                <img class="img-skills" src="imgs/Py.webp" alt="Python">
+                                <span>Inteligência Artificial</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="skill-item">
+                                <img class="img-skills" src="imgs/ml.png" alt="Machine Learning">
+                                <span>Machine Learning</span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <h2>Outras Tecnologias</h2>
+                    <div class="tech-grid">
+                        <a href="https://github.com/felipemartinsf/AED2" target="_blank" class="tech-item">
+                            <img class="img-projects" src="imgs/c.png" alt="C">
+                            <span>Algoritmos em C</span>
+                        </a>
+                        <a href="https://github.com/felipemartinsf/ProjetoAoc" target="_blank" class="tech-item">
+                            <img class="img-projects" src="imgs/React.png" alt="React">
+                            <span>React</span>
+                        </a>
+                        <a href="https://github.com/felipemartinsf/TypeScript" target="_blank" class="tech-item">
+                            <img class="img-projects" src="imgs/oop.png" alt="POO">
+                            <span>POO</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>Produzido somente com HTML, CSS E JavaScript.
+        </footer>
     <script src="index.js"></script>
 
 </body>

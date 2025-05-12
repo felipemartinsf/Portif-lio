@@ -1,501 +1,579 @@
-
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    behavior: 'smooth';
-}
-#port{
-    font-family: 'nunito';
-    color: #8748ce;
-    font-size: 60px;
-    margin-top: 30px;
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
-nav{
-    display: flex;
-    flex-direction: column;
-    text-decoration:none;
-    justify-content: center;
-}
-a{
-    text-decoration:none;
-    color: white;
-    cursor: pointer;
-    transition: 0.4s;
-    font-size: 1.2rem;
-}
-h4{
-    animation:shine 5s infinite;
-    font-family:  'nunito';
-}
-h3{
-    font-family:  'nunito';
-}
-li{
-    font-family:  'nunito';
-}
-#card3{
-    margin-bottom: 0 !important;
-}
-.navegacao{
-    margin-bottom: 2rem;
-    font-family: 'nunito';
-    justify-content: space-between; 
-
-}
-#h2{
-    color: white;
-    font-family: 'nunito';
-    font-size: 1rem;
-   text-align: left;
-   margin-top: 0.2rem;
-   cursor: pointer;
-}
-
-.row-title {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px; 
-  }
-
-#nome{
-    margin-right: 1rem;
-}
-
-#sumario{
-    margin-left: 1rem;
-    font-size: 3rem !important;
-}
-
-
-.navegacao:hover{
-    animation: shine 2s;
-}
-
-.info{
-    margin-top: 4rem;
-}
-a:hover{
-    transform: scale3d(1.2,1.2,1.2);
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-main{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
 body{
     background-color: #101010;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-@media screen and (max-width:768px){
-    .row{
-    display: flex;
-    flex-direction: column;
-    }
-    #port{
-        margin:0;
-    }
-    #gatinho{
-        margin-right: 0 !important;
-    }
-    #first-nav{
-        display: none;
-    }
-    .taxa{
-        flex-direction: column;
-        margin-left: 5vh;
-        height: 120vh  !important;
-    }
-    .linha{
-        flex-direction: column;
-    }
-    #titulo{
-        font-size: 50px;
-    }
-    #linkedin{
-        margin-top: 1.5rem !important;
-    }
-    #logo{
-        max-width: 15rem;
-        margin-bottom: 1rem;
-    }
-    #h2{
-        text-align: center;
-    }
-    .paragrafo{
-        font-size: 0.5rem;
-    }
-
- 
-}
-/*
-#cursor{
-   position: absolute;
-   width: 100px;
-   height: 100px;
-   border: 2px solid #7427cc;
-   box-sizing: border-box;
-   transition: 0.1s;
-   transform: translate(-50%,-50%);
-   border-radius: 50%;
-   background-color: #7427cc;
-   pointer-events: none;
-   -webkit-filter: blur(10px);
-   -moz-filter: blur(10px);
-   -o-filter: blur(10px);
-   -ms-filter: blur(10px);
-}
-*/
-#eu{
-    margin-top: 200px;
-    max-width: 100px;
 
 }
 
-@font-face {
-    font-family: 'lombok';
-    src: url('fontes/Lombok\ Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face{
-    font-family: 'nunito';
-    src: url('fontes/Nunito-VariableFont_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@keyframes bounce {
-    0%,20%,60%,100% {
-        -webkit-tranform:translateY(0);
-        transform: translateY(0);
-    }
-    40%{
-        -webkit-tranform:translateY(-8px);
-        transform: translateY(-8px);
-    }
-    80%{
-        -webkit-tranform:translateY(-4px);
-        transform: translateY(-4px);
-    }
-}
-
-
-
-h1:hover{
-    animation: bounce 1s;
-}
-
-/* Partes alem do início*/
-
-.taxa{
-    background-color: black;
-    height: 500px;
-    width: 60vw;
+/* Estilos para a seção de conhecimentos */
+.taxa#last {
+    padding: 30px;
     border-radius: 10px;
-    margin-bottom: 30rem;
-    border:1px inset #8D39EC;
-    align-items: center;
-    justify-content: center;
+    background-color: #101010;
+    box-shadow: 0 4px 15px #8748ce;
+
+    margin-bottom: 30px;
+}
+
+.titulo#lastt {
     text-align: center;
-    transition: 0.4s;
-    box-shadow: 0px 0px 53px 10px rgba(135,21,163,0.66);
+    margin-bottom: 25px;
+    color: #8748ce;
 }
 
-.taxa:hover{
-    box-shadow: 0px 0px 70px 20px rgba(135,21,163,0.66);
-}
-@keyframes jump {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px); /* Ajuste a altura conforme necessário */
-    }
-  }
-/*@keyframes troca{
-   0%{
-    transform: translateX(0px);
-   }
-   100%{
-    
-    background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
-   }
-}*/
-
-@keyframes shine{
-    0%{
-        color: white;
-    }
-    20%{
-        color: #8748ce;
-    }
-    40%{
-        color: white;
-    }
-    60%{
-        color: #8748ce;
-    }
-    80%{
-        color: white;
-    }
-    100%{
-        color: #8748ce;
-    }
-}
-
-.titulo{
-    color: #7427cc;
-    padding-top: 4px;
-    cursor: pointer;
-    font-family: 'nunito', Courier, monospace;
-  
-}
-.sub{
-    color: white;
-    font-family: 'nunito';
-    font-size: 1.5rem;
-    animation: none !important;
-    margin-bottom: 1rem;
-}
-.row-exp{
+.conhecimentos-container {
     display: flex;
-    flex-direction: row;
-    margin-bottom: 2rem;
-} 
+    justify-content: space-between;
+    align-items: stretch;
+}
 
-.info-exp{
-    background-color: black;
-    color: white;
-    width: 25vw;
-    height: 60vh;
-    border-radius: 10px;
-    margin-bottom: 30rem;
+/* Estilos para as colunas */
+.coluna-esquerda, .coluna-direita {
+    flex: 1;
+    padding: 20px;
+}
+
+.coluna-esquerda {
+    display: flex;
     flex-direction: column;
-    justify-content: space-between !important;
-    border:1px inset #f6f5f7;
-    transition: 0.4s;
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-    position: absolute; 
-    padding: 1rem;  
-    box-sizing: border-box;
+    justify-content: space-between;
 }
 
-.info-exp ul {
-    list-style-position: inside;
-    padding: 0;
-    margin: 0;
-    text-align: center; /* Alinha o texto dos itens da lista à esquerda */
-    margin-top: 20%;
+/* Linha divisória vertical */
+.linha-divisoria {
+    width: 2px;
+    background-color: #ddd;
+    margin: 0 20px;
 }
 
-.info-exp img {
-    position: absolute;
-    bottom: 1rem; /* Distância do fundo do `div` */
-    right: 1rem; /* Distância da direita do `div` */
-    max-width: 2.5rem;
-    cursor: pointer;
+/* Estilos para informações do curso */
+.curso-info {
+    margin-bottom: 20px;
 }
 
-/* CSS */
-.button-6 {
-  align-items: center;
-  background-color: #000000;
-  border: 1px solid #8D39EC;
-  border-radius: .25rem;
-  box-sizing: border-box;
-  color: rgba(255, 255, 255, 0.85);
-  cursor: pointer;
-  display: inline-flex;
-  font-family: 'nunito';
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+.curso-info p {
+    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
-
-.button-6:hover {
-  transform: translateY(-1px);
+/* Estilos para certificados */
+.certificados {
+    margin-top: 30px;
 }
 
-.button-6:active {
-  background-color: #F0F0F1;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
-}
-
-.paragrafo{
-font-size: 1.2rem;
-color: rgb(255, 255, 255);
-padding-top: 15px;
-padding-left: 15px;
-padding-right: 15px;
-font-family: "Verdana";
-margin-bottom: 2rem;
-}
-
-#last{
-margin-bottom: 100px;
-}
-#last-linha{
-    margin-top: 5%;
-}
-.last-title {
-    width: 100%;
-}
-
-.last-content {
-    height: 90%;
+.certificado-item {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #333;
+    box-shadow: 0 2px 4px #8748ce;
+    transition: transform 0.2s;
 }
 
-.projects{
-text-decoration: none;
-display: flex;
-align-items: center;
-justify-content: center;
-border-radius: 0.2rem;
-border: 0.1rem solid #8D39EC;
-cursor:pointer;
-background-color: black;
-color: white;
-width: 10rem;
-height: 5rem;
-font-size: 1rem;
-font-family: 'nunito';
-text-decoration: none;;
-}
-.img-projects{
-    margin-left: 1rem;
-    max-width: 4rem;
+.certificado-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 12px rgba(246, 109, 237, 0.15);
+    background-color: #626064;
+    color: black;
+
 }
 
-img{
-max-width: 300px;
-background-position: left;
-transition: 0.4s;
-cursor: pointer;
-}
-#logo:hover{
-    transform: scale3d(1.2,1.2,1.2);
-}
-#imglinkedin{
-max-width: 20px;
+.certificado-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    object-fit: contain;
 }
 
-.linha{
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-animation: none;
-margin-top: 2rem;
+/* Estilos para as skills de Python */
+.coluna-direita h2 {
+    margin: 20px 0 15px;
+    color: #fff;
+    font-size: 1.3rem;
 }
 
-button{
-color: white;
-width: 100px;
-height: 60px;
-background-color: black;
-border:5px inset #8D39EC;
-border-radius: 7px;
-cursor: pointer;
-display: flex;
-justify-content: center;
-}
-button:hover{
-transform: scale3d(1.05,1.05,1.05);
+.skills-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
 }
 
-#logo{
-cursor: pointer;
-}
-
-#exp{
+.skill-item {
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px #8748ce;
 }
 
-#certificado{
-border: none;
-}
-#linkedin{
-border: none;
-}
-#github{
-border: none;
+.skill-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    background-color: #f0f8ff;
 }
 
-#linkedinimg{
-max-width: 3rem;
-margin: 0 auto;
+.img-skills {
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
 }
 
-#githubimg{
-    max-width: 3rem;
-    margin: 0 auto;
-
+/* Grade de tecnologias */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
 }
 
-#certificadoimg{
-    max-width: 80%;
-}
-
-
-#gatinho{
-    background-size: contain;
-    background-image: url(imgs/fotoefeitos.com__final_1880583985261581686_-removebg-preview\ \(1\).png);
-    width: 300px;
-    height: 300px;
-    margin-right: 10rem;
-}
-#gatinho:hover{
-    animation: jump 2s infinite;
-}
-
-#last{
-    flex-direction: row;
-}
-.column{
+.tech-item {
     display: flex;
     flex-direction: column;
-    text-decoration:none;
-    justify-content: space-around;
-    height: 100%;
-}
-footer{
-    color: white;
-    font-family: 'lombok';
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #8748ce;
+    transition: transform 0.2s;
+    text-decoration: none;
+    color: inherit;
 }
 
+.tech-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .conhecimentos-container {
+        flex-direction: column;
+    }
+    
+    .linha-divisoria {
+        width: 100%;
+        height: 2px;
+        margin: 20px 0;
+    }
+}
+
+/* Estilos para a seção de vida profissional */
+#taxa2.taxa {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #101010;
+    box-shadow: 0 4px 15px #8748ce;
+
+    margin-bottom: 30px;
+}
+
+#taxa2 .titulo {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8748ce;
+}
+
+.experiencia-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Estilos para a coluna de experiências */
+.experiencias {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experiencia-item {
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.experiencia-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.experiencia-item h3 {
+    margin: 0 0 10px 0;
+    color: #8748ce;
+    font-size: 1.2rem;
+}
+
+.experiencia-item .cargo {
+    color: #8748ce;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experiencia-item .periodo {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.experiencia-item .descricao {
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Estilos para a coluna de redes sociais */
+.redes-sociais {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.rede-social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.rede-social-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.rede-social-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.rede-social-item span {
+    font-weight: 500;
+}
+p,span,footer{
+    color: #fff;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .experiencia-container {
+        flex-direction: column;
+    }
+    
+    .redes-sociais {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .rede-social-item {
+        min-width: 120px;
+    }
+}
+
+/* Estilos para a seção Vida Pessoal */
+#first.taxa {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #101010;
+    box-shadow: 0 4px 15px #8748ce;
+    margin-bottom: 30px;
+}
+
+#first .titulo {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #8748ce;
+    font-size: 1.8rem;
+}
+
+.vida-pessoal-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilos para a coluna de texto */
+.texto-biografia {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-biografia .paragrafo {
+    margin: 0;
+    line-height: 1.6;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.texto-biografia .paragrafo:first-child {
+    margin-bottom: 20px;
+}
+
+/* Estilos para a coluna da imagem */
+.imagem-perfil {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-perfil img {
+    max-width: 100%;    
+    height: 600px;      /* Ajuste a altura conforme necessário */
+    object-fit: cover;  
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.imagem-perfil img:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .vida-pessoal-container {
+        flex-direction: column;
+    }
+    
+    .texto-biografia {
+        order: 2;
+    }
+    
+    .imagem-perfil {
+        order: 1;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Estilos para o Hub/Sumário principal */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #101010;
+
+}
+
+#port {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #8748ce;
+}
+
+#taxa1.taxa {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #101010;
+    box-shadow: 0 4px 15px #8748ce;
+    margin-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    min-height: 500px; 
+}
+
+/* Cabeçalho do sumário */
+.header-container {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+#sumario {
+    font-size: 1.8rem;
+    color: #8748ce;
+    margin-bottom: 10px;
+}
+
+#nome {
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Container principal do hub */
+.hub-container {
+    display: flex;
+    gap: 40px;
+    align-items: center; 
+    justify-content: center; 
+    flex: 1; 
+}
+
+/* Coluna da imagem de perfil */
+.perfil-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 3px solid #fff;
+}
+
+.foto-perfil img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil-container {
+    flex: 1 1 0; 
+    min-width: 0; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
+
+.bio-curta {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 20px;
+    max-width: 100%; 
+    word-wrap: break-word; 
+    overflow-wrap: break-word; 
+    box-sizing: border-box; 
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-shrink: 1; 
+
+}
+
+
+
+/* Coluna do menu de navegação */
+.menu-navegacao {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-titulo {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Cards de navegação */
+.card-nav {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #8748ce;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-nav:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    background-color: #f0f8ff;
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-icon img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.card-info {
+    flex: 1;
+}
+
+.card-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: #8748ce;
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Elemento decorativo do gatinho */
+#gatinho {
+    width: 50px;
+    height: 50px;
+    background-image: url('imgs/cat.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hub-container {
+        flex-direction: column;
+    }
+    
+    .perfil-container {
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .bio-curta {
+        padding-left: 10px;  /* Menos padding nas laterais em telas menores */
+        padding-right: 10px;
+    }
+}
