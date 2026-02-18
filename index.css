@@ -632,6 +632,27 @@ main {
     margin-top: 8px;
 }
 
+/* Estilo para alinhar ícone e nome da empresa */
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre o ícone e o texto */
+    margin-bottom: 10px;
+}
+
+.company-icon {
+    width: 32px;  /* Tamanho ideal para ícones pequenos */
+    height: 32px;
+    object-fit: contain; /* Garante que a imagem não fique esticada */
+    border-radius: 4px;  /* Leve arredondada nos cantos do logo */
+}
+
+.experiencia-item h3 {
+    margin: 0; /* Remove a margem padrão para alinhar com o ícone */
+    color: #8748ce;
+    font-size: 1.3rem;
+}
+
 /* --- DICA DE CONTRASTE GERAL --- */
 p, span {
     color: #e0e0e0; /* Evita o branco puro que agride o olho no fundo preto */
