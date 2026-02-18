@@ -556,6 +556,87 @@ main {
     right: 10px;
 }
 
+.formacoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os cursos */
+}
+
+.subtitulo-conhecimento {
+    color: #8748ce;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    border-left: 4px solid #8748ce;
+    padding-left: 10px;
+}
+
+.formacao-item {
+    background-color: #1a1a1a; /* Um cinza levemente mais claro que o fundo */
+    padding: 18px;
+    border-radius: 12px;
+    border-left: 4px solid #333; /* Detalhe lateral neutro */
+    transition: all 0.3s ease;
+}
+
+.formacao-item:hover {
+    transform: translateX(8px);
+    background-color: #222;
+    border-left-color: #8748ce; /* Brilha no hover */
+}
+
+.formacao-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.curso-nome {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.tag-status {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+.tag-status.concluido {
+    background-color: rgba(0, 255, 127, 0.1);
+    color: #00ff7f;
+    border: 1px solid #00ff7f;
+}
+
+.tag-status.progresso {
+    background-color: rgba(135, 72, 206, 0.1);
+    color: #a87ff3;
+    border: 1px solid #8748ce;
+    box-shadow: 0 0 5px rgba(135, 72, 206, 0.2);
+}
+
+.instituicao {
+    color: #b3b3b3; 
+    font-size: 0.95rem;
+    margin: 4px 0;
+}
+
+.detalhe-curso {
+    color: #8748ce;
+    font-size: 0.85rem;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* --- DICA DE CONTRASTE GERAL --- */
+p, span {
+    color: #e0e0e0; /* Evita o branco puro que agride o olho no fundo preto */
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
     .hub-container {
@@ -571,15 +652,15 @@ main {
     }
 
     .bio-curta {
-        padding-left: 10px;  /* Menos padding nas laterais em telas menores */
+        padding-left: 10px;  
         padding-right: 10px;
     }
 }
 
 
 @font-face {
-    font-family: 'nunito'; /* Nome que você vai usar para a fonte */
-    src: url('fontes/Nunito-VariableFont_wght.ttf') format('truetype'); /* Caminho para o arquivo .ttf */
+    font-family: 'nunito'; 
+    src: url('fontes/Nunito-VariableFont_wght.ttf') format('truetype'); 
     font-weight: normal;
     font-style: normal;
 }

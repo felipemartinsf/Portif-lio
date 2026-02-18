@@ -1,118 +1,108 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head> <!---->
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Felipe Martins</title>
     <link rel="stylesheet" href="index.css">
-    <!--Bootstrap css
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
--->
 </head>
 
 <body>
     <main>
- 
-        <h1 id="port">Portfólio</h1>
+        <h1 id="port">Portfolio</h1>
     
         <div id="taxa1" class="taxa">
             <div class="header-container">
-                <h1 class="titulo" id="sumario">Sumário</h1>
+                <h1 class="titulo" id="sumario">Summary</h1>
                 <h2 class="titulo" id="nome">Felipe Martins Francisco</h2>
             </div>
             
             <div class="hub-container">
-                <!-- Coluna esquerda - Imagem de perfil -->
                 <div class="perfil-container">
+                    <div class="foto-perfil">
                         <img src="imgs/eu.png" alt="Felipe Martins Francisco">
-                    <p class="bio-curta">Cientista da computação em formação. Sempre procurando aprender e me desenvolver.</p>
+                    </div>
+                    <p class="bio-curta">Computer Scientist in training. Always looking to learn and grow professionally.</p>
                 </div>
                 
-                <!-- Coluna direita - Menu de navegação -->
                 <div class="menu-navegacao">                    
                     <div class="menu-cards">
                         <a class="card-nav" id="card1" href="#first">
                             <div class="card-info">
-                                <h4>Vida Pessoal</h4>
-                                <p>Conheça um pouco sobre mim, minhas origens e interesses</p>
+                                <h4>Personal Life</h4>
+                                <p>Get to know a bit about me, my origins, and interests</p>
                             </div>
                         </a>
                         
                         <a class="card-nav" id="card2" href="#taxa2">
                             <div class="card-info">
-                                <h4>Vida Profissional</h4>
-                                <p>Minha trajetória, experiências e conexões profissionais</p>
+                                <h4>Professional Life</h4>
+                                <p>My journey, experiences, and professional connections</p>
                             </div>
                         </a>
                         
                         <a class="card-nav" id="card3" href="#last">
                             <div class="card-info">
-                                <h4>Conhecimentos</h4>
-                                <p>Habilidades técnicas, certificações e projetos desenvolvidos</p>
+                                <h4>Skills & Expertise</h4>
+                                <p>Technical skills, certifications, and developed projects</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-            
-            <!-- Elemento decorativo do gatinho, mantido do código original -->
             <div id="gatinho"></div>
         </div>
-    
-    
-<div id="first" class="taxa">
-    <h1 class="titulo">Vida Pessoal</h1>
-    
-    <div class="vida-pessoal-container">
-        <div class="texto-biografia">
-            <p class="paragrafo">
-                Sou natural de Araraquara, cidade no interior de São Paulo, e me mudei para São José dos Campos em 2022 em busca de novas oportunidades e experiências. Sou corinthiano, mas também tenho um carinho especial pela Ferroviária, time da minha terra natal.
-            </p>
-            <p class="paragrafo">
-                Gosto de ouvir música e ver filmes que me desafiem a ver o mundo de perspectivas diferentes. Adoro experimentar comidas que nunca tinha experimentado antes.
-            </p>
-        </div>
-        
-        <div class="imagem-perfil">
-            <img src="imgs/arte portfolio.png" alt="Algumas imagens que eu gosto">
-        </div>
-    </div>
-</div>
 
+        <div id="first" class="taxa">
+            <h1 class="titulo">Personal Life</h1>
+            <div class="vida-pessoal-container">
+                <div class="texto-biografia">
+                    <p class="paragrafo">
+                        I am from Araraquara, a city in the countryside of São Paulo, and I moved to São José dos Campos in 2022 seeking new opportunities and experiences. I am a Corinthians supporter, but I also have a special affection for Ferroviária, my hometown team.
+                    </p>
+                    <p class="paragrafo">
+                        I enjoy listening to music and watching movies that challenge me to see the world from different perspectives. I love trying new foods and experiencing different cultures.
+                    </p>
+                </div>
+                
+                <div class="imagem-perfil">
+                    <img src="imgs/arte portfolio.png" alt="Portfolio Art">
+                </div>
+            </div>
+        </div>
 
         <div id="taxa2" class="taxa">
-            <h1 class="titulo">Vida profissional</h1>
-            
+            <h1 class="titulo">Professional Life</h1>
             <div class="experiencia-container">
                 <div class="experiencias">
                     <div class="experiencia-item">
-                        <h3>TI AUTOMOTIVE</h3>
-                        <p class="cargo">Estágiario em Suporte técnico de TI</p>
-                        <p class="periodo">01/2023 - 12/2023</p>
-                        <p class="descricao">Manutenção de computadores e equipamentos. Instalação e reparação de programas. Manutenção de servidores e redes.</p>
+                        <h3>AS2 GROUP</h3>
+                        <p class="cargo">Junior Data Engineer (Contracted for J&J)</p>
+                        <p class="periodo">01/2026 - PRESENT</p>
+                        <p class="descricao">Responsible for managing and creating data pipelines for the D&A (Data & Analytics) team. Executing advanced SQL queries within Databricks environments.</p>
                     </div>
-                    
+
                     <div class="experiencia-item">
                         <h3>JOHNSON & JOHNSON</h3>
-                        <p class="cargo">Engenharia de dados</p>
-                        <p class="periodo">
-                            01/2024 - ATUAL </span>
-                        </p>
-                        <p class="descricao">   Atuo com engenharia e análise de dados, sendo responsável pela construção e manutenção de fluxos de dados (ETL) utilizando Node-RED e JavaScript. Gerencio e otimizo bancos de dados SQL (Databricks, Microsoft SQL Server) e implemento automações e web scraping com Selenium.
-<p>
-Meu trabalho inclui a criação de dashboards no Power BI e a realização de estudos de dados com Python (Pandas, Polars, Matplotlib, Scikit-learn) para suportar as decisões de negócio. Além disso, desenvolvo pipelines ETL com Apache Airflow ou Azure e tenho experiência na containerização de aplicações com Docker.
+                        <p class="cargo">Data Engineering Intern</p>
+                        <p class="periodo">01/2024 - 01/2026</p>
+                        <p class="descricao">Built ETL workflows using Node-RED, JavaScript, and Python. Managed SQL databases (Databricks, MS SQL Server) and implemented automations and web scraping with Selenium. Developed Power BI dashboards and performed data analysis using Pandas, Polars, and Scikit-learn.</p>
+                    </div>
 
-</p>
+                    <div class="experiencia-item">
+                        <h3>TI AUTOMOTIVE</h3>
+                        <p class="cargo">IT Support Intern</p>
+                        <p class="periodo">01/2023 - 12/2023</p>
+                        <p class="descricao">Maintenance of computers and equipment. Software installation and troubleshooting. Server and network maintenance.</p>
                     </div>
                 </div>
                 
-                <!-- Coluna direita com botões de redes sociais  <span class="periodo" id="data-atual">-->
                 <div class="redes-sociais">
                     <a href="https://www.linkedin.com/in/felipe-martins-ba5629243/" target="_blank" class="rede-social-item">
                         <img src="imgs/linkedin.png" alt="LinkedIn">
                         <span>LinkedIn</span>
                     </a>
-                    
                     <a href="https://github.com/felipemartinsf" target="_blank" class="rede-social-item">
                         <img src="imgs/github.png" alt="GitHub">
                         <span>GitHub</span>
@@ -121,76 +111,89 @@ Meu trabalho inclui a criação de dashboards no Power BI e a realização de es
             </div>
         </div>
 
-
         <div class="taxa" id="last">
-            <h1 class="titulo" id="lastt">Conhecimentos</h1>
-            
+            <h1 class="titulo" id="lastt">Knowledge</h1>
             <div class="conhecimentos-container">
-                <!-- Coluna Esquerda -->
                 <div class="coluna-esquerda">
-                    <div class="curso-info">
-                        <p>Meu curso na UNIFESP é dividido em dois bacharelados. Estou no <span id="ano-contador"><!-- Script calculará anos desde 2022 --></span>º ano do curso total. Comecei o curso de bacharelado em ciência e tecnologia em 01/2023 e completo em dezembro de 2025. Em 2026, começarei e terminarei o curso de bacharelado em ciência da computação</p>
+                    <div class="formacoes-container">
+                        <h2 class="subtitulo-conhecimento">Education</h2>
+                        
+                        <div class="formacao-item">
+                            <div class="formacao-header">
+                                <strong class="curso-nome">B.S. in Science and Technology</strong>
+                                <span class="tag-status concluido">Completed</span>
+                            </div>
+                            <p class="instituicao">UNIFESP | 2022 - 2024</p>
+                        </div>
+
+                        <div class="formacao-item">
+                            <div class="formacao-header">
+                                <strong class="curso-nome">B.S. in Computer Science</strong>
+                                <span class="tag-status progresso">In Progress</span>
+                            </div>
+                            <p class="instituicao">UNIFESP | 2024 - Present</p>
+                            <p class="detalhe-curso">Currently in the <span id="ano-contador"></span>th year of the professional cycle.</p>
+                        </div>
                     </div>
-                    
+
                     <div class="certificados">
-                        <a class="certificado-item"  href="dowload/EF SET Certificate.pdf">
-                            <img src="imgs/cer.png" alt="Certificado de Inglês">
-                            <span>Certificado de Proficiência em Inglês</span>
-                        </a>
-                        <a class="certificado-item" href="dowload/proj.pdf">
-                            <img src="imgs/proj.png" alt="Certificado do curso de Project pela JnJ" >
-                            <span>Certificado de Gestão de Projetos</span>
-                        </a>
-                         <a class="certificado-item" href="dowload/resume.pdf">
-                            <img src="imgs/resume.png" alt="Currículo completo" >
-                            <span>Currículo</span>
-                        </a>
+                        <h2 class="subtitulo-conhecimento">Documents</h2>
+                        <div class="certificados-grid">
+                            <a class="certificado-item" href="download/EF SET Certificate.pdf">
+                                <img src="imgs/cer.png" alt="English">
+                                <span>Proficient English</span>
+                            </a>
+                            <a class="certificado-item" href="download/proj.pdf">
+                                <img src="imgs/proj.png" alt="Project Management">
+                                <span>Project Management</span>
+                            </a>
+                            <a class="certificado-item" href="download/resume.pdf">
+                                <img src="imgs/resume.png" alt="Resume">
+                                <span>Resume (PDF)</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <!-- Linha Divisória -->
                 <div class="linha-divisoria"></div>
                 
-                <!-- Coluna Direita -->
                 <div class="coluna-direita">
                     <h2>Python</h2>
                     <ul class="skills-list">
                         <li>
                             <a class="skill-item" href="https://github.com/felipemartinsf/Projeto-IA" target="_blank">
-                                <img class="img-skills" src="imgs/Py.webp" alt="Botao para ir para o Portfolio" >
-                                <span>Projeto para a disciplina de IA</span>
+                                <img class="img-skills" src="imgs/Py.webp" alt="AI Project">
+                                <span>AI Course Project</span>
                             </a>
                         </li>
                         <li>
                             <a class="skill-item" href="https://github.com/convince-ai/convinceai-LLM" target="_blank">
-                                <img class="img-skills" src="imgs/en.png" alt="Machine Learning">
-                                <span>Projeto para a disciplina de Engenharia de software</span>
+                                <img class="img-skills" src="imgs/en.png" alt="Software Engineering">
+                                <span>Software Engineering Project</span>
                             </a>
                         </li>
                     </ul>
                     
-                    <h2>Outras Tecnologias</h2>
+                    <h2>Other Technologies</h2>
                     <div class="tech-grid">
                         <a href="https://github.com/felipemartinsf/AED2" target="_blank" class="tech-item">
-                            <img class="img-projects" src="imgs/c.png" alt="C">
-                            <span>Algoritmos em C</span>
+                            <img src="imgs/c.png" alt="C">
+                            <span>Algorithms in C</span>
                         </a>
                         <a href="https://github.com/felipemartinsf/ProjetoAoc" target="_blank" class="tech-item">
-                            <img class="img-projects" src="imgs/React.png" alt="React">
+                            <img src="imgs/React.png" alt="React">
                             <span>React</span>
                         </a>
                         <a href="https://github.com/felipemartinsf/TypeScript" target="_blank" class="tech-item">
-                            <img class="img-projects" src="imgs/oop.png" alt="POO">
-                            <span>POO</span>
+                            <img src="imgs/oop.png" alt="OOP">
+                            <span>OOP</span>
                         </a>
                     </div>
                 </div>
             </div>
-        </main>
-        <footer>Produzido somente com HTML, CSS E JavaScript.
-        </footer>
+        </div>
+    </main>
+    <footer>Built with HTML, CSS, and JavaScript.</footer>
     <script src="index.js"></script>
-
 </body>
-
 </html>
