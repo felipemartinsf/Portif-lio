@@ -3,7 +3,6 @@ body{
     font-family: 'nunito', sans-serif;
 }
 
-/* Estilos para a seção de conhecimentos */
 .taxa#last {
     padding: 30px;
     border-radius: 10px;
@@ -25,7 +24,6 @@ body{
     align-items: stretch;
 }
 
-/* Estilos para as colunas */
 .coluna-esquerda, .coluna-direita {
     flex: 1;
     padding: 20px;
@@ -37,14 +35,12 @@ body{
     justify-content: space-between;
 }
 
-/* Linha divisória vertical */
 .linha-divisoria {
     width: 2px;
     background-color: #ddd;
     margin: 0 20px;
 }
 
-/* Estilos para informações do curso */
 .curso-info {
     margin-bottom: 20px;
 }
@@ -54,7 +50,6 @@ body{
     line-height: 1.5;
 }
 
-/* Estilos para certificados */
 .certificados {
     margin-top: 30px;
 }
@@ -72,6 +67,22 @@ body{
     text-decoration: none;
 }
 
+.formacao-header .certificado-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;           
+    background: none;      
+    box-shadow: none;      
+    margin-left: 10px;
+}
+
+.formacao-header .certificado-item img {
+    width: 22px;
+    height: 22px;
+    margin: 0;             
+}
+
 .certificado-item:hover {
     transform: translateY(-3px);
     box-shadow: 0 9px 12px rgba(246, 109, 237, 0.15);
@@ -87,7 +98,6 @@ body{
     object-fit: contain;
 }
 
-/* Estilos para as skills de Python */
 .coluna-direita h2 {
     margin: 20px 0 15px;
     color: #fff;
@@ -126,7 +136,6 @@ body{
     margin-right: 12px;
 }
 
-/* Grade de tecnologias */
 .tech-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -159,7 +168,6 @@ body{
     object-fit: contain;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .conhecimentos-container {
         flex-direction: column;
@@ -172,7 +180,6 @@ body{
     }
 }
 
-/* Estilos para a seção de vida profissional */
 #taxa2.taxa {
     padding: 30px;
     border-radius: 10px;
@@ -194,7 +201,6 @@ body{
     gap: 40px;
 }
 
-/* Estilos para a coluna de experiências */
 .experiencias {
     flex: 3;
     display: flex;
@@ -238,7 +244,6 @@ body{
     line-height: 1.5;
 }
 
-/* Estilos para a coluna de redes sociais */
 .redes-sociais {
     flex: 1;
     display: flex;
@@ -280,7 +285,6 @@ p,span,footer{
 }
 
 
-/* Responsividade */
 @media (max-width: 768px) {
     .experiencia-container {
         flex-direction: column;
@@ -297,7 +301,6 @@ p,span,footer{
     }
 }
 
-/* Estilos para a seção Vida Pessoal */
 #first.taxa {
     padding: 30px;
     border-radius: 10px;
@@ -319,7 +322,6 @@ p,span,footer{
     gap: 30px;
 }
 
-/* Estilos para a coluna de texto */
 .texto-biografia {
     flex: 1;
     display: flex;
@@ -372,7 +374,6 @@ p,span,footer{
 }
 
 
-/* Sumario */
 main {
     max-width: 1200px;
     margin: 0 auto;
@@ -497,7 +498,6 @@ main {
     gap: 15px;
 }
 
-/* Cards de navegação */
 .card-nav {
     display: flex;
     align-items: center;
@@ -559,7 +559,7 @@ main {
 .formacoes-container {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Espaço entre os cursos */
+    gap: 15px;
 }
 
 .subtitulo-conhecimento {
@@ -571,17 +571,17 @@ main {
 }
 
 .formacao-item {
-    background-color: #1a1a1a; /* Um cinza levemente mais claro que o fundo */
+    background-color: #1a1a1a;
     padding: 18px;
     border-radius: 12px;
-    border-left: 4px solid #333; /* Detalhe lateral neutro */
+    border-left: 4px solid #333; 
     transition: all 0.3s ease;
 }
 
 .formacao-item:hover {
     transform: translateX(8px);
     background-color: #222;
-    border-left-color: #8748ce; /* Brilha no hover */
+    border-left-color: #8748ce; 
 }
 
 .formacao-header {
@@ -632,33 +632,30 @@ main {
     margin-top: 8px;
 }
 
-/* Estilo para alinhar ícone e nome da empresa */
 .company-header {
     display: flex;
     align-items: center;
-    gap: 12px; /* Espaço entre o ícone e o texto */
+    gap: 12px; 
     margin-bottom: 10px;
 }
 
 .company-icon {
-    width: 32px;  /* Tamanho ideal para ícones pequenos */
+    width: 32px;  
     height: 32px;
-    object-fit: contain; /* Garante que a imagem não fique esticada */
-    border-radius: 4px;  /* Leve arredondada nos cantos do logo */
+    object-fit: contain; 
+    border-radius: 4px;  
 }
 
 .experiencia-item h3 {
-    margin: 0; /* Remove a margem padrão para alinhar com o ícone */
+    margin: 0;
     color: #8748ce;
     font-size: 1.3rem;
 }
 
-/* --- DICA DE CONTRASTE GERAL --- */
 p, span {
-    color: #e0e0e0; /* Evita o branco puro que agride o olho no fundo preto */
+    color: #e0e0e0; 
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .hub-container {
         flex-direction: column;
@@ -678,6 +675,9 @@ p, span {
     }
 }
 
+#ano-contador{
+    color: #8748ce;
+}
 
 @font-face {
     font-family: 'nunito'; 
